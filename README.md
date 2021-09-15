@@ -53,3 +53,9 @@ This is my exercise based on tutorials by Dennis on Udemy
         new file:   projects/models.py
         new file:   projects/tests.py
         new file:   projects/views.py
+
+
+#### 2.3 Register the app 'projects' to the project 'devsearch'
+
+        modified:   README.md
+        modified:   devsearch/settings.py
