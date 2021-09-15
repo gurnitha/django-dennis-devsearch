@@ -22,3 +22,8 @@ This is my exercise based on tutorials by Dennis on Udemy
 
        modified:   README.md
 
+
+#### 1.4 Upgrade pip
+
+       modified:   README.md
+
