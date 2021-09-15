@@ -27,3 +27,19 @@ This is my exercise based on tutorials by Dennis on Udemy
 
        modified:   README.md
 
+
+###------------------------
+### 2. DJANGO PROJECT & APP
+###------------------------
+
+
+#### 2.1 Create django project 'devsearch'
+
+        modified:   README.md
+        new file:   devsearch/__init__.py
+        new file:   devsearch/asgi.py
+        new file:   devsearch/settings.py
+        new file:   devsearch/urls.py
+        new file:   devsearch/wsgi.py
+        new file:   manage.py
+
