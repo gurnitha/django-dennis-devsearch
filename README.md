@@ -59,3 +59,14 @@ This is my exercise based on tutorials by Dennis on Udemy
 
         modified:   README.md
         modified:   devsearch/settings.py
+
+
+###------------
+### 3. DATABASE
+###------------
+
+
+#### 3.1 Create MySQL database
+
+        modified:   README.md
+
