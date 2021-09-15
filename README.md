@@ -81,6 +81,7 @@ This is my exercise based on tutorials by Dennis on Udemy
         modified:   README.md
         modified:   devsearch/settings.py
 
+
 #### 3.4 Run migrate to create auth tables
 
         modified:   README.md
@@ -88,7 +89,14 @@ This is my exercise based on tutorials by Dennis on Udemy
 
         NOTE: Fixing the database setting
 
+
 #### 3.5 Craete superuser and run the server
+
+        modified:   README.md
+
+
+#### 3.6 Admin panel and login
+
 
         modified:   README.md
 
