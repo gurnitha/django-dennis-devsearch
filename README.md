@@ -75,3 +75,8 @@ This is my exercise based on tutorials by Dennis on Udemy
 
         modified:   README.md
 
+
+#### 3.3 Connect the project with the database
+
+        modified:   README.md
+        modified:   devsearch/settings.py
