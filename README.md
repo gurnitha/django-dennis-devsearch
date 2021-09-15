@@ -124,3 +124,9 @@ This is my exercise based on tutorials by Dennis on Udemy
                 `created` datetime(6) NOT NULL, 
                 `id` char(32) NOT NULL PRIMARY KEY
         );
+
+
+#### 4.2 Register Project model to admin.py
+
+        modified:   README.md
+        modified:   projects/admin.py
