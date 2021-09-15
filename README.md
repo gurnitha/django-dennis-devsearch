@@ -100,3 +100,27 @@ This is my exercise based on tutorials by Dennis on Udemy
 
         modified:   README.md
 
+
+###----------
+### 4. MODELS
+###----------
+
+
+#### 4.1 Create Project model and run migration
+
+        modified:   README.md
+        new file:   projects/migrations/0001_initial.py
+        modified:   projects/models.py
+
+        (venv3932) λ python manage.py sqlmigrate projects 0001
+        --
+        -- Create model Project
+        --
+        CREATE TABLE `projects_project` (
+                `title` varchar(200) NOT NULL, 
+                `description` longtext NULL, 
+                `demo_link` varchar(2000) NULL, 
+                `source_link` varchar(2000) NULL, 
+                `created` datetime(6) NOT NULL, 
+                `id` char(32) NOT NULL PRIMARY KEY
+        );
