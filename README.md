@@ -70,3 +70,8 @@ This is my exercise based on tutorials by Dennis on Udemy
 
         modified:   README.md
 
+
+#### 3.2 Install mysqliclient
+
+        modified:   README.md
+
