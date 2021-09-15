@@ -16,3 +16,9 @@ This is my exercise based on tutorials by Dennis on Udemy
 #### 1.2 Create virtualenv
 
        modified:   README.md
+
+
+#### 1.3 Install django v3.2
+
+       modified:   README.md
+
