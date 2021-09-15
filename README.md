@@ -43,3 +43,13 @@ This is my exercise based on tutorials by Dennis on Udemy
         new file:   devsearch/wsgi.py
         new file:   manage.py
 
+
+#### 2.1 Create djangp app 'projects'
+
+        new file:   projects/__init__.py
+        new file:   projects/admin.py
+        new file:   projects/apps.py
+        new file:   projects/migrations/__init__.py
+        new file:   projects/models.py
+        new file:   projects/tests.py
+        new file:   projects/views.py
