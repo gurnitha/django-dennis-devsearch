@@ -87,3 +87,8 @@ This is my exercise based on tutorials by Dennis on Udemy
         modified:   devsearch/settings.py
 
         NOTE: Fixing the database setting
+
+#### 3.5 Craete superuser and run the server
+
+        modified:   README.md
+
