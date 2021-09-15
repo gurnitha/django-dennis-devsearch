@@ -11,3 +11,8 @@ This is my exercise based on tutorials by Dennis on Udemy
 
         modified:   .gitignore
         modified:   README.md
+
+
+#### 1.2 Create virtualenv
+
+       modified:   README.md
