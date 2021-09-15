@@ -80,3 +80,10 @@ This is my exercise based on tutorials by Dennis on Udemy
 
         modified:   README.md
         modified:   devsearch/settings.py
+
+#### 3.4 Run migrate to create auth tables
+
+        modified:   README.md
+        modified:   devsearch/settings.py
+
+        NOTE: Fixing the database setting
