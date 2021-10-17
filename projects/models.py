@@ -58,7 +58,9 @@ class Review(models.Model):
         ('up', 'Up Vote'),
         ('down', 'Down Vote'),
     )
-
+    project = models.ForeignKey(
+        Project, 
+        on_delete=models.CASCADE)
     body = models.TextField(
         null=True, 
         blank=True)

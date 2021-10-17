@@ -167,3 +167,9 @@ This is my exercise based on tutorials by Dennis on Udemy
 
         modified:   README.md
         modified:   projects/models.py
+
+
+#### 4.8 Added OneToMany relationship Project and Review models
+
+        modified:   README.md
+        modified:   projects/models.py
