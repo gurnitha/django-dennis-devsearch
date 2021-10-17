@@ -136,3 +136,9 @@ This is my exercise based on tutorials by Dennis on Udemy
 
         modified:   README.md
         modified:   projects/models.py
+
+
+#### 4.4 Create Review model
+
+        modified:   README.md
+        modified:   projects/models.py
