@@ -155,3 +155,9 @@ This is my exercise based on tutorials by Dennis on Udemy
 
         modified:   README.md
         modified:   projects/models.py
+
+
+#### 4.5 Register Tag model to admin
+
+        modified:   README.md
+        modified:   projects/admin.py
