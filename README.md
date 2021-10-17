@@ -161,3 +161,9 @@ This is my exercise based on tutorials by Dennis on Udemy
 
         modified:   README.md
         modified:   projects/admin.py
+
+
+#### 4.7 Added ManyToMany relationship Project and Tag models
+
+        modified:   README.md
+        modified:   projects/models.py

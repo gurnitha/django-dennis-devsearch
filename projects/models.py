@@ -27,6 +27,10 @@ class Project(models.Model):
         max_length=2000, 
         null=True, 
         blank=True)
+    tags = models.ManyToManyField(
+        'Tag', # To put '' is not a must, but
+               # it means Tag is resides bellow
+        blank=True)
     vote_total = models.IntegerField(
         default=0, 
         null=True, 
