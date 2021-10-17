@@ -149,3 +149,9 @@ This is my exercise based on tutorials by Dennis on Udemy
 
         modified:   README.md
         modified:   projects/admin.py
+
+
+#### 4.6 Create Tag model
+
+        modified:   README.md
+        modified:   projects/models.py
