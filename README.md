@@ -173,3 +173,9 @@ This is my exercise based on tutorials by Dennis on Udemy
 
         modified:   README.md
         modified:   projects/models.py
+
+
+#### 4.9 Run migrations
+
+        modified:   README.md
+        new file:   projects/migrations/0002_auto_20211017_1926.py
