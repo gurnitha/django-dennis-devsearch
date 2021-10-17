@@ -130,3 +130,9 @@ This is my exercise based on tutorials by Dennis on Udemy
 
         modified:   README.md
         modified:   projects/admin.py
+
+
+#### 4.3 Modified Project model
+
+        modified:   README.md
+        modified:   projects/models.py
