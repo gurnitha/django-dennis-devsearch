@@ -5,16 +5,31 @@ from django.shortcuts import render
 
 # Create your views here.
 
+# Static dictionary data
+projectsList = [
+    {
+        'id': '1',
+        'title': 'Ecommerce Website',
+        'description': 'Fully functional ecommerce website'
+    },
+    {
+        'id': '2',
+        'title': 'Portfolio Website',
+        'description': 'A personal website to write articles and display work'
+    },
+    {
+        'id': '3',
+        'title': 'Social Network',
+        'description': 'An open source project built by the community'
+    }
+]
+
+
 def projects(request):
 	page_title = 'Projects'
-	msg = "Message:Learning rendering data to template!"
-	msg2 = "Using CONTEXT dictionary"
-	logic_number = 11
 	context = {
 		'title':page_title,
-		'number':logic_number,
-		'message':msg,
-		'message2':msg2
+		'projects':projectsList
 	}
 	return render(request, 'projects/projects.html', context)
 

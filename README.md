@@ -231,3 +231,10 @@ This is my exercise based on tutorials by Dennis on Udemy
         modified:   projects/templates/projects/projects.html
         modified:   projects/views.py
         modified:   templates/main.html
+
+
+#### 5.6 Using for loop rendering static data project list to template
+
+        modified:   README.md
+        modified:   projects/templates/projects/projects.html
+        modified:   projects/views.py
