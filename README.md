@@ -335,3 +335,10 @@ This is my exercise based on tutorials by Dennis on Udemy
         modified:   projects/templates/projects/project_form.html
         modified:   projects/templates/projects/projects.html
         modified:   projects/views.py
+
+
+#### 8.7 CRUD - (U) Update project
+
+        modified:   projects/templates/projects/projects.html
+        modified:   projects/urls.py
+        modified:   projects/views.py

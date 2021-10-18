@@ -56,3 +56,35 @@ def createProject(request):
 
 	# Template
 	return render(request, 'projects/project_form.html', context)
+
+
+def updateProject(request, pk):
+
+	# Get the project instance by its id
+	project = Project.objects.get(id=pk)
+
+	# Instantiate the ProjectForm class
+	# with parameter the instance of the project
+	form = ProjectForm(instance=project)
+
+	# If there is POST request, process the form
+	if request.method == "POST":
+
+		# Tesing the form: fillin the form and submit it
+		# print(request.POST) # tested :)
+
+		# Instantiate the ProjectForm class
+		form = ProjectForm(request.POST, instance=project)
+		# Check if form input is valid
+		if form.is_valid():
+			# Save the input
+			form.save()
+			return redirect('projects:projects')
+
+	# Context dictionary
+	context = {
+		'form':form,
+	} 
+
+	# Template
+	return render(request, 'projects/project_form.html', context)
