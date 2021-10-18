@@ -5,7 +5,9 @@ from django.shortcuts import render
 
 # locals
 from .models import Project
+from .forms import ProjectForm
 
+# Create your views here.
 
 def projects(request):
 	projects = Project.objects.all()
@@ -29,8 +31,8 @@ def project(request, pk):
 
 
 def createProject(request):
-
-	
+	form = ProjectForm()
 	context = {
+		'form':form,
 	} 
 	return render(request, 'projects/project_form.html', context)

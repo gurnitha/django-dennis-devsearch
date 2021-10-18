@@ -301,3 +301,10 @@ This is my exercise based on tutorials by Dennis on Udemy
         modified:   projects/urls.py
         modified:   projects/views.py
         modified:   templates/navbar.html
+
+
+#### 8.2 Create project_form page Part 2 - Django form
+
+        modified:   README.md
+        new file:   projects/forms.py
+        modified:   projects/views.py
