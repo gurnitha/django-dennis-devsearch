@@ -386,3 +386,11 @@ This is my exercise based on tutorials by Dennis on Udemy
 
         modified:   README.md
         modified:   devsearch/settings.py
+ 
+
+#### 10.2 Setup django whitenoice, add logo and modifien url
+
+        modified:   README.md
+        modified:   devsearch/settings.py
+        modified:   projects/urls.py
+        modified:   templates/main.html
