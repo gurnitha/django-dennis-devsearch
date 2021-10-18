@@ -209,3 +209,10 @@ This is my exercise based on tutorials by Dennis on Udemy
         modified:   projects/templates/projects/single-project.html
         modified:   templates/main.html
         modified:   templates/navbar.html 
+
+
+#### 5.3 Rendering data to templates
+
+        modified:   README.md
+        modified:   projects/templates/projects/projects.html
+        modified:   projects/views.py
