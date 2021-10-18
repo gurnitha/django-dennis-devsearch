@@ -359,3 +359,19 @@ This is my exercise based on tutorials by Dennis on Udemy
 #### 8.9 House keeping - modified README.md file
 
         modified:   README.md
+
+
+
+### 9. STATIC AND MEDIA FIELS
+### -----------------------------------------------------
+
+
+#### 9.1 Adding static and media files and their path
+
+        modified:   devsearch/settings.py
+        modified:   devsearch/urls.py
+        new file:   static/images/codesniper.png
+        ...
+        new file:   static/images/default.jpg
+        new file:   static/images/django-react-course.jpg
+        new file:   static/images/icon.svg
