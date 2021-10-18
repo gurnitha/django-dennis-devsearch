@@ -394,3 +394,18 @@ This is my exercise based on tutorials by Dennis on Udemy
         modified:   devsearch/settings.py
         modified:   projects/urls.py
         modified:   templates/main.html
+
+
+
+### 11. TEMPLATE THEMES
+### -----------------------------------------------------
+
+
+#### 11.1 Adding template theme for the projects page
+
+        modified:   README.md
+        modified:   projects/templates/projects/projects.html
+        modified:   static/uikit/app.js
+        modified:   static/uikit/styles/modules/_form.css
+        new file:   templates/index.html
+        modified:   templates/main.html
