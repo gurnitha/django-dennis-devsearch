@@ -342,3 +342,12 @@ This is my exercise based on tutorials by Dennis on Udemy
         modified:   projects/templates/projects/projects.html
         modified:   projects/urls.py
         modified:   projects/views.py
+
+
+#### 8.8 CRUD - (D) Delete project
+
+        modified:   README.md
+        new file:   projects/templates/projects/delete_template.html
+        modified:   projects/templates/projects/projects.html
+        modified:   projects/urls.py
+        modified:   projects/views.py
