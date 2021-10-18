@@ -223,3 +223,11 @@ This is my exercise based on tutorials by Dennis on Udemy
         modified:   README.md
         modified:   projects/templates/projects/projects.html
         modified:   projects/views.py
+
+
+#### 5.5 Using logic to passing data to template
+
+        modified:   README.md
+        modified:   projects/templates/projects/projects.html
+        modified:   projects/views.py
+        modified:   templates/main.html
