@@ -1,5 +1,8 @@
 # django-dennis-devsearch
+
 This is my exercise based on tutorials by Dennis on Udemy
+
+<a href="https://github.com/gurnitha/django-dennis-devsearch" target="_blank">Github repository</a>
 
 
 ### 1. INITIAL SETUP
@@ -351,3 +354,8 @@ This is my exercise based on tutorials by Dennis on Udemy
         modified:   projects/templates/projects/projects.html
         modified:   projects/urls.py
         modified:   projects/views.py
+
+
+#### 8.9 House keeping - modified README.md file
+
+        modified:   README.md
