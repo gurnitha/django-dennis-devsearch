@@ -1,7 +1,7 @@
 # projects/views.py
 
 # Django modules
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 
 # locals
 from .models import Project
@@ -31,8 +31,28 @@ def project(request, pk):
 
 
 def createProject(request):
+
+	# Bring in the ProjectForm class
 	form = ProjectForm()
+
+	# If there is POST request, process the form
+	if request.method == "POST":
+
+		# Tesing the form: fillin the form and submit it
+		# print(request.POST) # tested :)
+
+		# Instantiate the ProjectForm class
+		form = ProjectForm(request.POST)
+		# Check if form input is valid
+		if form.is_valid():
+			# Save the input
+			form.save()
+			return redirect('projects:projects')
+
+	# Context dictionary
 	context = {
 		'form':form,
 	} 
+
+	# Template
 	return render(request, 'projects/project_form.html', context)

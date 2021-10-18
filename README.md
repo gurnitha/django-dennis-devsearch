@@ -326,3 +326,12 @@ This is my exercise based on tutorials by Dennis on Udemy
         
         modified:   README.md
         modified:   projects/templates/projects/project_form.html
+
+
+#### 8.6 CRUD - (C) Create project
+
+        modified:   README.md
+        modified:   projects/forms.py
+        modified:   projects/templates/projects/project_form.html
+        modified:   projects/templates/projects/projects.html
+        modified:   projects/views.py
