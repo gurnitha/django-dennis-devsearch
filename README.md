@@ -375,3 +375,14 @@ This is my exercise based on tutorials by Dennis on Udemy
         new file:   static/images/default.jpg
         new file:   static/images/django-react-course.jpg
         new file:   static/images/icon.svg
+
+
+
+### 10. DEBUG AND ALLOWED_HOSTS
+### -----------------------------------------------------
+
+
+#### 10.1 Setup DEBUG an ALLOWED_HOSTS
+
+        modified:   README.md
+        modified:   devsearch/settings.py
