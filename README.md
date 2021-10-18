@@ -437,3 +437,12 @@ This is my exercise based on tutorials by Dennis on Udemy
         new file:   static/images/favicon_EIIUZwF.ico
         new file:   static/images/project-a_OXtBCRw.png
         new file:   static/images/project-c_n7zvYI9.png
+
+
+#### 11.4 Adding template theme for the project_form page Part 1
+
+        modified:   README.md
+        modified:   projects/templates/projects/project_form.html
+
+
+
