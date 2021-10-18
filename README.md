@@ -314,3 +314,9 @@ This is my exercise based on tutorials by Dennis on Udemy
 
         modified:   README.md
         modified:   projects/templates/projects/project_form.html
+
+
+#### 8.4 Create project_form page Part 4 - Rendering Django form with title, label etc
+
+        modified:   README.md
+        modified:   projects/templates/projects/project_form.html
