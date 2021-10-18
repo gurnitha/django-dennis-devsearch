@@ -257,3 +257,14 @@ This is my exercise based on tutorials by Dennis on Udemy
 #### 6.6 House keeping - Modified README.md file
 
         modified:   README.md
+
+
+
+### 7. RENDERING DATA FROM DATABASE TO TEMPLTES
+### -----------------------------------------------------
+
+
+#### 7.1 Rendering project list
+
+        modified:   README.md
+        modified:   projects/views.py
