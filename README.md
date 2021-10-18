@@ -287,3 +287,17 @@ This is my exercise based on tutorials by Dennis on Udemy
 
         modified:   README.md
         modified:   projects/templates/projects/projects.html
+
+
+
+### 8. CREATE, READ, UPDATE AND DELETE (CRUD)
+### -----------------------------------------------------
+
+
+#### 8.1 Create project_form page Part 1 - Basic VTUrl
+
+        modified:   README.md
+        new file:   projects/templates/projects/project_form.html
+        modified:   projects/urls.py
+        modified:   projects/views.py
+        modified:   templates/navbar.html

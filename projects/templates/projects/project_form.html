@@ -1,0 +1,18 @@
+<!-- projects/templates/projects/project_form.html -->
+{% extends 'main.html' %}
+
+{% block title %}
+{{title}}
+{% endblock title %}
+
+	{% block content %}
+
+	<h1>Project Form</h1>
+
+	<form method="POST">
+		{% csrf_token %}
+		
+		<input type="submit" name="">
+	</form>
+	
+	{% endblock content %}
