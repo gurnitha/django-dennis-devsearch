@@ -183,3 +183,19 @@ This is my exercise based on tutorials by Dennis on Udemy
         new file:   django_orm.py
         new file:   projects/migrations/0003_remove_project_featured_image.py
         modified:   projects/models.py
+
+
+### 5. TEMPLTES
+### -----------------------------------------------------
+
+#### 5.1 Using VTUrls to adding basic projects and single-project peges
+
+        modified:   README.md
+        modified:   devsearch/settings.py
+        modified:   devsearch/urls.py
+        new file:   projects/templates/projects/projects.html
+        new file:   projects/templates/projects/single-project.html
+        new file:   projects/urls.py
+        modified:   projects/views.py
+        new file:   templates/main.html
+        new file:   templates/navbar.html
