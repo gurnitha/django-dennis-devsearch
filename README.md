@@ -268,3 +268,16 @@ This is my exercise based on tutorials by Dennis on Udemy
 
         modified:   README.md
         modified:   projects/views.py
+
+
+#### 7.2 Rendering single project
+
+        modified:   README.md
+        modified:   projects/views.py
+
+
+#### 7.3 Rendering tags single project
+
+        modified:   README.md
+        modified:   projects/templates/projects/single-project.html
+        modified:   projects/views.py

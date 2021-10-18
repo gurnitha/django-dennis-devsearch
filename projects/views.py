@@ -39,10 +39,11 @@ def projects(request):
 
 
 def project(request, pk):
-	# projctObj = None
-	# for i in projectsList:
-	# 	if i['id'] == pk: 
-	# 		projctObj = i
-	context = {} 
+	projectObj = Project.objects.get(id=pk)
+	tags = projectObj.tags.all()
+	context = {
+		'project':projectObj,
+		'tags':tags,
+	} 
 
 	return render(request, 'projects/single-project.html', context)

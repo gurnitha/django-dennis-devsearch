@@ -4,8 +4,15 @@
 	{% block content %}
 	<h1 style="background-color:green">Single Project Template</h1>
 	
-	<h2>{{project.title}}</h2>
-	<p>{{project.description}}</p>
+	<h2>Project title: {{project.title}}</h2>
+	<hr>
+
+		{% for tag in project.tags.all %}
+			<span style="border:1px solid grey; margin-right: 4px; 
+			width: 100px;" >{{tag}} </span> 
+		{% endfor %}
+	<hr>
+	<p>Description: {{project.description}}</p>
 	<a href="{% url 'projects:projects' %}">Back home &larr;</a>
 	<hr>
 
