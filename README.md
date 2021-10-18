@@ -211,21 +211,26 @@ This is my exercise based on tutorials by Dennis on Udemy
         modified:   templates/navbar.html 
 
 
-#### 5.3 Rendering data to templates
+
+### 6. RENDERING DUMY DATA TO TEMPLTES
+### -----------------------------------------------------
+
+
+#### 6.1 Rendering data to templates
 
         modified:   README.md
         modified:   projects/templates/projects/projects.html
         modified:   projects/views.py
 
 
-#### 5.4 Using context dic to rendering data to templates
+#### 6.2 Using context dic to rendering data to templates
 
         modified:   README.md
         modified:   projects/templates/projects/projects.html
         modified:   projects/views.py
 
 
-#### 5.5 Using logic to passing data to template
+#### 6.6 Using logic to passing data to template
 
         modified:   README.md
         modified:   projects/templates/projects/projects.html
@@ -233,14 +238,14 @@ This is my exercise based on tutorials by Dennis on Udemy
         modified:   templates/main.html
 
 
-#### 5.6 Using for loop rendering static data project list to template
+#### 6.4 Using for loop rendering static data project list to template
 
         modified:   README.md
         modified:   projects/templates/projects/projects.html
         modified:   projects/views.py
 
 
-#### 5.7 Rendering single-project
+#### 6.5 Rendering single-project
 
         modified:   README.md
         modified:   projects/templates/projects/projects.html
@@ -248,3 +253,7 @@ This is my exercise based on tutorials by Dennis on Udemy
         modified:   projects/urls.py
         modified:   projects/views.py
         modified:   templates/navbar.html
+
+#### 6.6 House keeping - Modified README.md file
+
+        modified:   README.md
