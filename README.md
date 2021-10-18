@@ -308,3 +308,9 @@ This is my exercise based on tutorials by Dennis on Udemy
         modified:   README.md
         new file:   projects/forms.py
         modified:   projects/views.py
+
+
+#### 8.3 Create project_form page Part 3 - Rendering Django form to project_form page
+
+        modified:   README.md
+        modified:   projects/templates/projects/project_form.html
