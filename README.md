@@ -188,6 +188,7 @@ This is my exercise based on tutorials by Dennis on Udemy
 ### 5. TEMPLTES
 ### -----------------------------------------------------
 
+
 #### 5.1 Using VTUrls to adding basic projects and single-project peges
 
         modified:   README.md
@@ -199,3 +200,12 @@ This is my exercise based on tutorials by Dennis on Udemy
         modified:   projects/views.py
         new file:   templates/main.html
         new file:   templates/navbar.html
+
+
+#### 5.2 Template inheritance
+
+        modified:   README.md
+        modified:   projects/templates/projects/projects.html
+        modified:   projects/templates/projects/single-project.html
+        modified:   templates/main.html
+        modified:   templates/navbar.html 

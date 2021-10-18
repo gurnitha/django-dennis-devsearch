@@ -1,15 +1,8 @@
 <!-- projects/templates/projects/projects.html -->
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<title>Projects</title>
-</head>
-<body>
-	<h1>Logo</h1>
-	<a href="{% url 'projects:projects' %}">Projects</a>
-	<a href="{% url 'projects:project' %}">Single Project</a>
-	<hr>
+{% extends 'main.html' %}
+
+	{% block content %}
+
 	<h1  style="background-color:red">Projects Template</h1>
 	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -18,6 +11,4 @@
 	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 	<hr>
-	<h1>Footer</h1>
-</body>
-</html>
+	{% endblock content %}
