@@ -409,3 +409,19 @@ This is my exercise based on tutorials by Dennis on Udemy
         modified:   static/uikit/styles/modules/_form.css
         new file:   templates/index.html
         modified:   templates/main.html
+
+
+#### 11.2 Re-rendering projects from db to projects page
+
+        modified:   README.md
+        modified:   projects/templates/projects/projects.html
+        new file:   static/images/DevSearch Projects.jpg
+        new file:   static/images/Devsearch Home.jpg
+        new file:   static/images/Devsearch Inbox.jpg
+        new file:   static/images/Devsearch Profile.jpg
+        new file:   static/images/favicon.ico
+        modified:   static/images/logo.svg
+        new file:   static/images/project-a.png
+        new file:   static/images/project-b.png
+        new file:   static/images/project-c.png
+        modified:   templates/main.html
