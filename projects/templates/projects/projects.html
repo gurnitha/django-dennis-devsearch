@@ -23,7 +23,10 @@
 	{% for project in projects %}
 		<ul>
 			<li><b>Product id:</b> {{project.id}}</li>
-			<li><b>Product title:</b> {{project.title}}</li>
+			<li>
+				<b>Product title:</b> 
+				<a href="{% url 'projects:project' project.id %}">{{project.title}}</a>
+			</li>
 			<li><b>Product description:</b> {{project.description}}</li>
 		</ul>
 	{% endfor %}

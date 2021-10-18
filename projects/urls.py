@@ -11,5 +11,5 @@ app_name = 'projects'
 
 urlpatterns = [
     path('projects/', views.projects, name='projects'),
-    path('project/', views.project, name='project'),
+    path('project/<str:pk>/', views.project, name='project'),
 ]
