@@ -425,3 +425,15 @@ This is my exercise based on tutorials by Dennis on Udemy
         new file:   static/images/project-b.png
         new file:   static/images/project-c.png
         modified:   templates/main.html
+
+
+#### 11.3 Adding template theme for the single project page
+
+        modified:   README.md
+        new file:   projects/migrations/0004_project_featured_image.py
+        modified:   projects/models.py
+        modified:   projects/templates/projects/projects.html
+        modified:   projects/templates/projects/single-project.html
+        new file:   static/images/favicon_EIIUZwF.ico
+        new file:   static/images/project-a_OXtBCRw.png
+        new file:   static/images/project-c_n7zvYI9.png

@@ -15,10 +15,10 @@ class Project(models.Model):
     description = models.TextField(
         null=True, 
         blank=True)
-    # featured_image = models.ImageField(
-    #     null=True, 
-    #     blank=True, 
-    #     default="default.jpg")
+    featured_image = models.ImageField(
+        null=True, 
+        blank=True, 
+        default="default.jpg")
     demo_link = models.CharField(
         max_length=2000, 
         null=True, 
