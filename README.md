@@ -216,3 +216,10 @@ This is my exercise based on tutorials by Dennis on Udemy
         modified:   README.md
         modified:   projects/templates/projects/projects.html
         modified:   projects/views.py
+
+
+#### 5.4 Using context dic to rendering data to templates
+
+        modified:   README.md
+        modified:   projects/templates/projects/projects.html
+        modified:   projects/views.py

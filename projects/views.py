@@ -7,7 +7,12 @@ from django.shortcuts import render
 
 def projects(request):
 	msg = "Message:Learning rendering data to template!"
-	return render(request, 'projects/projects.html', {'message':msg})
+	msg2 = "Using CONTEXT dictionary"
+	context = {
+		'message':msg,
+		'message2':msg2
+	}
+	return render(request, 'projects/projects.html', context)
 
 
 def project(request):
