@@ -7,28 +7,28 @@
 
 	{% block content %}
 
-	<p>We have a message: <span  style="background-color:#F2766B;">{{message}}</span></p>
+	<h1>Projects</h1>
 
-	<p>We have another message: <span  style="background-color:#79C9F5;">{{message2}}</span></p>
-
-	<!-- Logic -->
-	{% if number > 10 %}
-		<p>The numbar is greater than 10</p>
-	{% else %}
-		<p>It less than 10!</p>	
-	{% endif %}
-
-	<h1  style="background-color:red">Projects Template</h1>
-
-	{% for project in projects %}
-		<ul>
-			<li><b>Product id:</b> {{project.id}}</li>
-			<li>
-				<b>Product title:</b> 
-				<a href="{% url 'projects:project' project.id %}">{{project.title}}</a>
-			</li>
-			<li><b>Product description:</b> {{project.description}}</li>
-		</ul>
-	{% endfor %}
+	<table>
+		<tr>
+			<th>Id</th>
+			<th>Title</th>
+			<th>Positive votes</th>  
+			<th>Votes</th>
+			<th>Created</th>
+			<th></th>
+		</tr>
+		{% for project in projects %}
+		<tr>
+			<td>{{project.id}}</td>
+			<td>{{project.title}}</td>
+			<td>{{project.vote_ratio}}%</td>
+			<td>{{project.vote_total}}</td>
+			<td>{{project.created}}</td>
+			<td><a href="{% url 'projects:project' project.id %}">View</a>
+		</tr>
+		{% endfor %}
+	</table>
+	
 	<hr>
 	{% endblock content %}

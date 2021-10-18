@@ -281,3 +281,9 @@ This is my exercise based on tutorials by Dennis on Udemy
         modified:   README.md
         modified:   projects/templates/projects/single-project.html
         modified:   projects/views.py
+
+
+#### 7.4 Display projects in a table
+
+        modified:   README.md
+        modified:   projects/templates/projects/projects.html
