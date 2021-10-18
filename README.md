@@ -2,9 +2,8 @@
 This is my exercise based on tutorials by Dennis on Udemy
 
 
-###-----------------
 ### 1. INITIAL SETUP
-###-----------------
+### -----------------------------------------------------
 
 
 #### 1.1 Create Github repository
@@ -28,9 +27,8 @@ This is my exercise based on tutorials by Dennis on Udemy
        modified:   README.md
 
 
-###------------------------
 ### 2. DJANGO PROJECT & APP
-###------------------------
+### -----------------------------------------------------
 
 
 #### 2.1 Create django project 'devsearch'
@@ -61,9 +59,8 @@ This is my exercise based on tutorials by Dennis on Udemy
         modified:   devsearch/settings.py
 
 
-###------------
 ### 3. DATABASE
-###------------
+### -----------------------------------------------------
 
 
 #### 3.1 Create MySQL database
@@ -101,9 +98,8 @@ This is my exercise based on tutorials by Dennis on Udemy
         modified:   README.md
 
 
-###----------
 ### 4. MODELS
-###----------
+### -----------------------------------------------------
 
 
 #### 4.1 Create Project model and run migration
@@ -179,3 +175,11 @@ This is my exercise based on tutorials by Dennis on Udemy
 
         modified:   README.md
         new file:   projects/migrations/0002_auto_20211017_1926.py
+
+
+#### 4.10 Modified model, new file and modified README.md
+
+        modified:   README.md
+        new file:   django_orm.py
+        new file:   projects/migrations/0003_remove_project_featured_image.py
+        modified:   projects/models.py
