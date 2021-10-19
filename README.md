@@ -550,3 +550,15 @@ This is my exercise based on tutorials by Dennis on Udemy
         modified:   README.md
         modified:   devsearch/settings.py
         modified:   users/apps.py
+
+
+#### 12.3 Create profiles page
+
+        Steps
+
+        1. Create templates folder: users/templates
+        2. Create users folder    : users/templates/users
+        3. Create profile page    : users/templates/users/profile.html
+
+        modified:   README.md
+        new file:   users/templates/users/profile.html
