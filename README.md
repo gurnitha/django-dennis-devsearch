@@ -544,3 +544,9 @@ This is my exercise based on tutorials by Dennis on Udemy
         new file:   users/tests.py
         new file:   users/views.py
 
+
+#### 12.2 Register the users app to settings.py
+
+        modified:   README.md
+        modified:   devsearch/settings.py
+        modified:   users/apps.py
