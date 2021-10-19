@@ -639,3 +639,15 @@ This is my exercise based on tutorials by Dennis on Udemy
         modified:   README.md
         new file:   static/images/profiles/user-default.png
         modified:   users/models.py
+
+
+#### 14.2 Run migrations to create table
+
+        Steps
+
+        1. Run makemigrations 
+        2. Run migrate
+        3. The result
+
+        modified:   README.md
+        new file:   users/migrations/0001_initial.py
