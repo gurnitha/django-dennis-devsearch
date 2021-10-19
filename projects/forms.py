@@ -16,4 +16,7 @@ class ProjectForm(ModelForm):
 		fields = ['title', 'description',
 				  'demo_link', 'source_link',
 				  'tags']
+		# Change multiple select to multiple radion button
+		widgets = {'tags': forms.CheckboxSelectMultiple(),}
+
 

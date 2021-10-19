@@ -454,9 +454,14 @@ This is my exercise based on tutorials by Dennis on Udemy
         3. Display form label: {{field.label}} 
         4. Replace all line of the input tag with: {{field}} 
         5. Check the result
-        
+
         modified:   README.md
         modified:   projects/forms.py
         modified:   projects/templates/projects/project_form.html
 
+
+#### 11.6 PROJECT_FORM Part 6: Change tags field from multiselect to radio button
+
+        modified:   README.md
+        modified:   projects/forms.py
 
