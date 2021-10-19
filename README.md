@@ -780,3 +780,10 @@ This is my exercise based on tutorials by Dennis on Udemy
         modified:   README.md
         modified:   users/templates/users/profiles.html
         modified:   users/views.py
+
+
+#### 15.7 Retrieve and display skill
+
+        modified:   README.md
+        modified:   users/templates/users/profiles.html
+        modified:   users/views.py
