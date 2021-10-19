@@ -618,3 +618,24 @@ This is my exercise based on tutorials by Dennis on Udemy
         deleted:    static/images/profiles/dennis_ee5zj3F.jpg
         deleted:    static/images/profiles/user-default.png
         deleted:    static/images/profiles/user-default_YS9Vr6e.png
+
+
+
+### 14. USERS PROFILES MODEL
+### -----------------------------------------------------
+
+
+#### 14.1 Create Profile model
+
+        Steps
+
+        1. Go to users
+        2. Open models.py
+        3. Define the Profile model and its fields
+        4. Go to static/images 
+        5. Create a new folder: profiles
+        6. Add a default image into profiles folder
+
+        modified:   README.md
+        new file:   static/images/profiles/user-default.png
+        modified:   users/models.py
