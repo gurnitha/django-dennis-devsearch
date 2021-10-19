@@ -754,3 +754,17 @@ This is my exercise based on tutorials by Dennis on Udemy
         new file:   users/migrations/0003_skill.py
         modified:   users/models.py
         modified:   users/templates/users/profiles.html
+
+
+
+#### 15.4 Add location field to Profile model
+
+
+        Steps
+
+        1. Open the file: users/models.py
+        2. Add the field
+        3. Run migration
+
+        modified:   README.md
+        modified:   users/models.py
