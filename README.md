@@ -730,4 +730,27 @@ This is my exercise based on tutorials by Dennis on Udemy
         1. Remove some cards in the page
 
         modified:   README.md
-        modified:   users/templates/users/profiles.html        
+        modified:   users/templates/users/profiles.html 
+
+
+
+#### 15.3 Create Skill model
+
+
+        Steps
+
+        1. Analise the content
+           -owner 
+           -neme
+           -description
+           -created 
+        2. Create the Skill model
+        3. Add OneToMany rel with Profile 
+        4. Run migration
+        5. Register to admin 
+
+        modified:   README.md
+        modified:   users/admin.py
+        new file:   users/migrations/0003_skill.py
+        modified:   users/models.py
+        modified:   users/templates/users/profiles.html
