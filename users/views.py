@@ -21,4 +21,8 @@ def profiles(request):
 
 # userProfile view
 def userProfile(request, pk):
-	return render(request, 'users/user-profile.html')
+	profile = Profile.objects.get(id=pk)
+	context = {
+		'profile':profile,
+	}
+	return render(request, 'users/user-profile.html', context)

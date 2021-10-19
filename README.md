@@ -803,3 +803,8 @@ This is my exercise based on tutorials by Dennis on Udemy
         modified:   users/urls.py
         modified:   users/views.py
 
+#### 16.2 Load user information to user-profile page Part 1 - Aside
+
+        modified:   README.md
+        new file:   users/templates/users/user-profile.html
+
