@@ -651,3 +651,16 @@ This is my exercise based on tutorials by Dennis on Udemy
 
         modified:   README.md
         new file:   users/migrations/0001_initial.py
+
+
+#### 14.3 Register the Profile model to admin.py to see it in admin panel
+
+        Steps
+
+        1. Open admin.py from users
+        2. Import Profile model
+        3. Register it to admin
+        4. See the result
+        
+        modified:   README.md
+        modified:   users/admin.py
