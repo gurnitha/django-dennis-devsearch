@@ -562,3 +562,15 @@ This is my exercise based on tutorials by Dennis on Udemy
 
         modified:   README.md
         new file:   users/templates/users/profile.html
+
+
+#### 12.4 Create profiles view
+
+        Steps
+
+        1. Open users/views.py file
+        2. Define profiles views and render the profiles page
+
+        modified:   README.md
+        modified:   users/views.py      
+
