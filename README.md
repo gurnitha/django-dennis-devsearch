@@ -574,3 +574,17 @@ This is my exercise based on tutorials by Dennis on Udemy
         modified:   README.md
         modified:   users/views.py      
 
+
+#### 12.5 Create urls
+
+        Steps
+
+        1. Inside users app, create a new file: urls.py
+        2. Define the urls
+        3. Register the urls to the devsearch/urls.py
+        4. Testing to see the resutl
+
+        modified:   README.md
+        modified:   devsearch/urls.py
+        modified:   users/apps.py
+        new file:   users/urls.py
