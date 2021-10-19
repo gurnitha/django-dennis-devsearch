@@ -692,5 +692,31 @@ This is my exercise based on tutorials by Dennis on Udemy
         1. Go admin panel
         2. Open projects > click on a project
         3. Add/select user
-        
+
         modified:   README.md
+
+
+#### 14.5 Display username to projects page
+
+        Steps
+
+        1. Open projects.html
+        2. Load the owner of the project by its username
+
+        modified:   README.md
+        modified:   projects/templates/projects/projects.html
+
+
+
+### 15. USERS PROFILES PAGE
+### -----------------------------------------------------
+
+
+#### 15.1 Add theme to the profiles.html file
+
+        Steps
+
+        1. Add theme to the page
+
+        modified:   README.md
+        modified:   users/templates/users/profiles.html
