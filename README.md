@@ -552,7 +552,12 @@ This is my exercise based on tutorials by Dennis on Udemy
         modified:   users/apps.py
 
 
-#### 12.3 Create profiles page
+
+### 13. USERS PROFILES PAGE
+### -----------------------------------------------------
+
+
+#### 13.1 Create profiles page
 
         Steps
 
@@ -564,7 +569,7 @@ This is my exercise based on tutorials by Dennis on Udemy
         new file:   users/templates/users/profile.html
 
 
-#### 12.4 Create profiles view
+#### 13.2 Create profiles view
 
         Steps
 
@@ -575,7 +580,7 @@ This is my exercise based on tutorials by Dennis on Udemy
         modified:   users/views.py      
 
 
-#### 12.5 Create urls
+#### 13.3 Create urls
 
         Steps
 
@@ -590,13 +595,26 @@ This is my exercise based on tutorials by Dennis on Udemy
         new file:   users/urls.py
 
 
-#### 12.5 Extending the main layout to the profiles page
+#### 13.4 Extending the main layout to the profiles page
 
         Steps
 
         1. Extends the main layout
         2. Use the block tags
         3. Testing to see the result
-        
+
         modified:   README.md
         modified:   users/templates/users/profiles.html
+
+
+#### 13.5 House keeping - Modified README.md file
+
+        modified:   README.md
+        deleted:    static/images/profiles/2021-06-27_16_29_50-Window.png
+        deleted:    static/images/profiles/22437186.jpg
+        deleted:    static/images/profiles/b3wSZKj4_400x400.jpg
+        deleted:    static/images/profiles/dennis.jpg
+        deleted:    static/images/profiles/dennis_Hepsy19.jpg
+        deleted:    static/images/profiles/dennis_ee5zj3F.jpg
+        deleted:    static/images/profiles/user-default.png
+        deleted:    static/images/profiles/user-default_YS9Vr6e.png
