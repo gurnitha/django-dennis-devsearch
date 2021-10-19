@@ -588,3 +588,15 @@ This is my exercise based on tutorials by Dennis on Udemy
         modified:   devsearch/urls.py
         modified:   users/apps.py
         new file:   users/urls.py
+
+
+#### 12.5 Extending the main layout to the profiles page
+
+        Steps
+
+        1. Extends the main layout
+        2. Use the block tags
+        3. Testing to see the result
+        
+        modified:   README.md
+        modified:   users/templates/users/profiles.html
