@@ -661,6 +661,25 @@ This is my exercise based on tutorials by Dennis on Udemy
         2. Import Profile model
         3. Register it to admin
         4. See the result
-        
+
         modified:   README.md
         modified:   users/admin.py
+
+
+#### 14.4 Adding OneToMany relationship between Profile and Project
+
+        Steps
+
+        1. Import Profile model
+        2. Add a new field (owner) for its the relationship
+
+        modified:   README.md
+        new file:   projects/migrations/0005_project_owner.py
+        modified:   projects/models.py
+        new file:   static/images/profiles/AI-BABY.PNG
+        new file:   static/images/profiles/bisma.PNG
+        new file:   static/images/profiles/ing.PNG
+        new file:   static/images/profiles/ing_cXEFvj1.PNG
+        new file:   static/images/profiles/logo-jet.JPG
+        new file:   users/migrations/0002_profile_username.py
+        modified:   users/models.py

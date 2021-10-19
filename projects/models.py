@@ -5,11 +5,16 @@ from django.db import models
 import uuid # to overide the default id in the table
 
 # Locals
-
+from users.models import Profile
 # Create your models here.
 
 # MODELS:Project
 class Project(models.Model):
+    owner = models.ForeignKey(
+        Profile, 
+        null=True, 
+        blank=True, 
+        on_delete=models.SET_NULL) # To keep the records eventhough he leaves
     title = models.CharField(
         max_length=200)
     description = models.TextField(
