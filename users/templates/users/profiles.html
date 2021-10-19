@@ -37,7 +37,7 @@
                 	<!-- Card -->
                     <div class="column card">
                         <div class="dev">
-                            <a href="" class="card__body">
+                            <a href="{% url 'users:user-profile' profile.id %}" class="card__body">
                                 <div class="dev__profile">
                                     <img class="avatar avatar--md" src="{{profile.profile_image.url}}" alt="image" />
                                     <div class="dev__meta">

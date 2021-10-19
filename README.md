@@ -787,3 +787,19 @@ This is my exercise based on tutorials by Dennis on Udemy
         modified:   README.md
         modified:   users/templates/users/profiles.html
         modified:   users/views.py
+
+
+
+### 16. USER PROFILE PAGE
+### -----------------------------------------------------
+
+#### 16.1 Create user-profile page VTUrl
+
+        modified:   README.md
+        modified:   devsearch/urls.py
+        modified:   projects/urls.py
+        modified:   users/templates/users/profiles.html
+        new file:   users/templates/users/user-profile.html
+        modified:   users/urls.py
+        modified:   users/views.py
+

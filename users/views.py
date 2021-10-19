@@ -8,7 +8,7 @@ from . models import Profile, Skill
 
 # Create your views here.
 
-# Profile view
+# Profiles view
 def profiles(request):
 	profiles = Profile.objects.all()
 	skills = Skill.objects.all()
@@ -17,3 +17,8 @@ def profiles(request):
 		'skills': skills
 	}
 	return render(request, 'users/profiles.html', context)
+
+
+# userProfile view
+def userProfile(request, pk):
+	return render(request, 'users/user-profile.html')
