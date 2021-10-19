@@ -526,3 +526,21 @@ This is my exercise based on tutorials by Dennis on Udemy
 
         modified:   README.md
         modified:   projects/forms.py
+
+
+
+### 12. USERS APP
+### -----------------------------------------------------
+
+
+#### 12.1 Create 'users' app
+
+        modified:   README.md
+        new file:   users/__init__.py
+        new file:   users/admin.py
+        new file:   users/apps.py
+        new file:   users/migrations/__init__.py
+        new file:   users/models.py
+        new file:   users/tests.py
+        new file:   users/views.py
+
