@@ -491,3 +491,38 @@ This is my exercise based on tutorials by Dennis on Udemy
                         placeholder="Add title"  <<<-- here added
                         required id="id_title">
                     </div>
+
+        modified:   README.md
+        modified:   projects/forms.py
+
+        
+#### 11.8 PROJECT_FORM Part 8: Using for loop to replace techniques in 11.7
+
+
+       BEFORE:
+
+        <!-- Input:Text -->
+                    <div class="form__field">
+                        <label 
+                            for="formInput#text">Title
+                        </label>
+                        <input type="text" name="title" maxlength="200" 
+                        class="input" <<<-- here added
+                        placeholder="Add title"  <<<-- here added
+                        required id="id_title">
+                    </div>
+
+        AFTER:
+
+        <!-- Input:Text -->
+                    <div class="form__field">
+                        <label 
+                            for="formInput#text">Title
+                        </label>
+                        <input type="text" name="title" maxlength="200" 
+                        class="input" <<<-- here added
+                        required id="id_title">
+                    </div>
+
+        modified:   README.md
+        modified:   projects/forms.py
