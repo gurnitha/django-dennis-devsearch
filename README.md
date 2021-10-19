@@ -683,3 +683,14 @@ This is my exercise based on tutorials by Dennis on Udemy
         new file:   static/images/profiles/logo-jet.JPG
         new file:   users/migrations/0002_profile_username.py
         modified:   users/models.py
+
+
+#### 14.5 Assign each project to user
+
+        Steps
+
+        1. Go admin panel
+        2. Open projects > click on a project
+        3. Add/select user
+        
+        modified:   README.md
