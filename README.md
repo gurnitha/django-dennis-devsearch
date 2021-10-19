@@ -720,3 +720,14 @@ This is my exercise based on tutorials by Dennis on Udemy
 
         modified:   README.md
         modified:   users/templates/users/profiles.html
+
+
+#### 15.2 Preparing the page to display users from db
+
+
+        Steps
+
+        1. Remove some cards in the page
+
+        modified:   README.md
+        modified:   users/templates/users/profiles.html        
