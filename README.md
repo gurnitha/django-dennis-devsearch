@@ -770,7 +770,13 @@ This is my exercise based on tutorials by Dennis on Udemy
         modified:   users/models.py
 
 
-
 #### 15.5 Admin - Add skill to users, add location to profiles
 
         modified:   README.md
+
+
+#### 15.6 Retrieve and display profile
+
+        modified:   README.md
+        modified:   users/templates/users/profiles.html
+        modified:   users/views.py
