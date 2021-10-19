@@ -465,3 +465,29 @@ This is my exercise based on tutorials by Dennis on Udemy
         modified:   README.md
         modified:   projects/forms.py
 
+
+#### 11.7 PROJECT_FORM Part 7: Adding class style to input field
+
+        BEFORE:
+
+        <!-- Input:Text -->
+                    <div class="form__field">
+                        <label 
+                            for="formInput#text">Title
+                        </label>
+                        <input type="text" name="title" maxlength="200" 
+                        required id="id_title">
+                    </div>
+
+        AFTER:
+
+        <!-- Input:Text -->
+                    <div class="form__field">
+                        <label 
+                            for="formInput#text">Title
+                        </label>
+                        <input type="text" name="title" maxlength="200" 
+                        class="input" <<<-- here added
+                        placeholder="Add title"  <<<-- here added
+                        required id="id_title">
+                    </div>
