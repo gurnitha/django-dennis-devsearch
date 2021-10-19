@@ -439,10 +439,24 @@ This is my exercise based on tutorials by Dennis on Udemy
         new file:   static/images/project-c_n7zvYI9.png
 
 
-#### 11.4 Adding template theme for the project_form page Part 1
+#### 11.4 PROJECT_FORM Part 1: Adding template theme 
 
         modified:   README.md
         modified:   projects/templates/projects/project_form.html
 
+
+#### 11.5 PROJECT_FORM Part 2: Loop the form field
+
+        Steps:
+
+        1. Keep 1 form field and the submit button and remove the rest
+        2. Use for loop to loop the ONE of the form field
+        3. Display form label: {{field.label}} 
+        4. Replace all line of the input tag with: {{field}} 
+        5. Check the result
+        
+        modified:   README.md
+        modified:   projects/forms.py
+        modified:   projects/templates/projects/project_form.html
 
 

@@ -1,7 +1,8 @@
 # projects/forms.py
 
 # Django modules
-from django.forms import ModelForm
+from django.forms import ModelForm, widgets
+from django import forms
 
 # Locals
 from .models import Project
@@ -15,5 +16,4 @@ class ProjectForm(ModelForm):
 		fields = ['title', 'description',
 				  'demo_link', 'source_link',
 				  'tags']
-
 
