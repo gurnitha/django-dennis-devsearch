@@ -859,3 +859,9 @@ This is my exercise based on tutorials by Dennis on Udemy
         modified:   README.md
         modified:   projects/templates/projects/projects.html
         modified:   templates/main.html
+
+
+#### 16.10 Load user information to user-profile page Part 10 - linking owner name with the user-profile page to re-load the page
+
+        modified:   README.md
+        modified:   users/templates/users/user-profile.html

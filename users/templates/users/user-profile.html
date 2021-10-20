@@ -110,7 +110,11 @@
                                         <div class="card__body">
                                             <h3 class="project__title">{{obj.title}}</h3>
                                             <p>
-                                                <a class="project__author" href="profile.html">{{obj.owner|title}}</a></p>
+                                                <a class="project__author" 
+                                                    href="{% url 'users:user-profile' obj.owner.id %}">
+                                                    {{obj.owner.name|title}}
+                                                </a>
+                                            </p>
                                                 <p class="project--rating">
                                                 <span style="font-weight: bold;">{{obj.vote_ratio}}%</span> Postitive
                                                 Feedback ({{obj.vote_total}} Vote{{obj.vote_total|pluralize:"s"}})
