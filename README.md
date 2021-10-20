@@ -814,3 +814,8 @@ This is my exercise based on tutorials by Dennis on Udemy
         new file:   users/migrations/0005_profile_social_stackoverflow.py
         modified:   users/models.py
         modified:   users/templates/users/user-profile.html
+
+
+#### 16.4 Load user information to user-profile page Part 3 - about
+
+        modified:   users/templates/users/user-profile.html
