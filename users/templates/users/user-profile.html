@@ -67,17 +67,17 @@
                         <!-- Skill -->
                         <div class="devInfo__skills">
 
-                        	<!-- Skill detail -->
+                            {% for topSkill in topSkills %}
+                        	<!-- Skill detail/with description -->
                             <div class="devSkill">
-                                <h4 class="devSkill__title">JavaScript</h4>
+                                <h4 class="devSkill__title">{{topSkill.name}}</h4>
                                 <p class="devSkill__info">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae neque voluptatum ut? Quaerat, ea
-                                    cumque! Dolorum provident esse molestias commodi odit sapiente quod quasi corrupti obcaecati? Nobis
-                                    ex temporibus quaerat!
+                                    {{topSkill.description}}
                                 </p>
                             </div>
-                            <!-- END Skill detail -->
-
+                            <!-- END Skill detail/with description -->
+                            {% endfor %}
+                            
                             <!-- Other skills  -->
                             <h3 class="devInfo__subtitle">Other Skills</h3>
                             <div class="devInfo__otherSkills">

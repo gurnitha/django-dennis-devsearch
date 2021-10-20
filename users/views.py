@@ -22,7 +22,13 @@ def profiles(request):
 # userProfile view
 def userProfile(request, pk):
 	profile = Profile.objects.get(id=pk)
+
+	'''Exclude skill that has not description or
+	   get skill with descripion'''
+	topSkills = profile.skill_set.exclude(description__exact="")
+
 	context = {
 		'profile':profile,
+		'topSkills':topSkills
 	}
 	return render(request, 'users/user-profile.html', context)

@@ -819,3 +819,10 @@ This is my exercise based on tutorials by Dennis on Udemy
 #### 16.4 Load user information to user-profile page Part 3 - about
 
         modified:   users/templates/users/user-profile.html
+
+
+#### 16.5 Load user information to user-profile page Part 4 - skill with descripion
+
+        modified:   README.md
+        modified:   users/templates/users/user-profile.html
+        modified:   users/views.py
