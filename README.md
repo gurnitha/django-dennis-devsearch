@@ -827,8 +827,16 @@ This is my exercise based on tutorials by Dennis on Udemy
         modified:   users/templates/users/user-profile.html
         modified:   users/views.py
 
+
 #### 16.6 Load user information to user-profile page Part 5 - skill without descripion
 
         modified:   README.md
         modified:   users/templates/users/user-profile.html
         modified:   users/views.py
+
+
+#### 16.7 Load user information to user-profile page Part 6 - limit the skill show in the profiles page
+
+        modified:   README.md
+        modified:   users/templates/users/profiles.html
+
