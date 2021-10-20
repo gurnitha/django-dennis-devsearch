@@ -888,3 +888,9 @@ This is my exercise based on tutorials by Dennis on Udemy
 
         modified:   README.md
         modified:   users/models.py
+
+
+#### 17.4 Create signals (post_delete) - DELETE a profile and print out the instance Sender and Reciever
+
+        modified:   README.md
+        modified:   users/models.py
