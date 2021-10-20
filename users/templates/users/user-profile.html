@@ -101,18 +101,19 @@
                         <h3 class="devInfo__title">Projects</h3>
                         <div class="grid grid--two">
 
+                            {% for obj in profile.project_set.all %}
                         	<!-- Card -->
                             <div class="column">
                                 <div class="card project">
                                     <a href="single-project.html" class="project">
-                                        <img class="project__thumbnail" src="images/project-b.png" alt="project thumbnail" />
+                                        <img class="project__thumbnail" src="{{obj.featured_image.url}}" alt="project thumbnail" />
                                         <div class="card__body">
-                                            <h3 class="project__title">DevSearch UI Design</h3>
+                                            <h3 class="project__title">{{obj.title}}</h3>
                                             <p>
-                                    <a class="project__author" href="profile.html">By Shahriar P. Shuvo</a></p>
+                                    <a class="project__author" href="profile.html">{{obj.owner|title}}</a></p>
                                     <p class="project--rating">
-                                    <span style="font-weight: bold;">92%</span> Postitive
-                                    Feedback (62 Votes)
+                                    <span style="font-weight: bold;">{{obj.vote_ratio}}%</span> Postitive
+                                    Feedback ({{obj.vote_total}} Vote{{obj.vote_total|pluralize:"s"}})
                                     </p>
                                     <div class="project__tags">
                                     <span class="tag tag--pill tag--main">
@@ -130,6 +131,7 @@
                                 </div>
                             </div>
                             <!-- END Card -->
+                            {% endfor %}
 
                         </div>
                     </div>

@@ -840,3 +840,9 @@ This is my exercise based on tutorials by Dennis on Udemy
         modified:   README.md
         modified:   users/templates/users/profiles.html
 
+
+#### 16.8 Load user information to user-profile page Part 7 - showing all projects AS CHILD of profile
+
+        modified:   README.md
+        modified:   users/templates/users/user-profile.html
+
