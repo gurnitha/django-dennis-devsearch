@@ -865,3 +865,14 @@ This is my exercise based on tutorials by Dennis on Udemy
 
         modified:   README.md
         modified:   users/templates/users/user-profile.html
+
+
+
+### 17. DJANGO SIGNALS
+### -----------------------------------------------------
+
+
+#### 17.1 Create signals (post_save) - modified  a profile in the db and save
+
+        modified:   README.md
+        modified:   users/models.py

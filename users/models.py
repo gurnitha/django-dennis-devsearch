@@ -4,6 +4,7 @@
 from django.db import models
 from django.contrib.auth.models import User
 import uuid
+from django.db.models.signals import post_save
 
 # Create your models here.
 
@@ -38,3 +39,11 @@ class Skill(models.Model):
 
     def __str__(self):
         return str(self.name)
+
+
+# Singnals
+def profileUpdate(sender, instance, created, **kwargs):
+    print('Modified a profile in the db and save!')
+
+
+post_save.connect(profileUpdate, sender=Profile)
