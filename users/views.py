@@ -27,8 +27,12 @@ def userProfile(request, pk):
 	   get skill with descripion'''
 	topSkills = profile.skill_set.exclude(description__exact="")
 
+	'''Get skill without description'''
+	otherSkills = profile.skill_set.filter(description="")
+
 	context = {
 		'profile':profile,
-		'topSkills':topSkills
+		'topSkills':topSkills,
+		'otherSkills':otherSkills
 	}
 	return render(request, 'users/user-profile.html', context)
