@@ -808,3 +808,9 @@ This is my exercise based on tutorials by Dennis on Udemy
         modified:   README.md
         new file:   users/templates/users/user-profile.html
 
+
+#### 16.3 Load user information to user-profile page Part 2 - social media
+
+        new file:   users/migrations/0005_profile_social_stackoverflow.py
+        modified:   users/models.py
+        modified:   users/templates/users/user-profile.html
