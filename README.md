@@ -846,3 +846,9 @@ This is my exercise based on tutorials by Dennis on Udemy
         modified:   README.md
         modified:   users/templates/users/user-profile.html
 
+
+#### 16.7 Load user information to user-profile page Part 7 - showing all tags belong to the project own by the a user
+
+        modified:   README.md
+        modified:   users/templates/users/user-profile.html
+        modified:   users/views.py

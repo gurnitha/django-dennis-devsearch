@@ -5,6 +5,7 @@ from django.shortcuts import render
 
 # Locals
 from . models import Profile, Skill 
+from projects.models import Tag
 
 # Create your views here.
 
@@ -30,9 +31,12 @@ def userProfile(request, pk):
 	'''Get skill without description'''
 	otherSkills = profile.skill_set.filter(description="")
 
+	tags = Tag.objects.all()
+
 	context = {
 		'profile':profile,
 		'topSkills':topSkills,
-		'otherSkills':otherSkills
+		'otherSkills':otherSkills,
+		'tags':tags
 	}
 	return render(request, 'users/user-profile.html', context)

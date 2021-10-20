@@ -110,23 +110,24 @@
                                         <div class="card__body">
                                             <h3 class="project__title">{{obj.title}}</h3>
                                             <p>
-                                    <a class="project__author" href="profile.html">{{obj.owner|title}}</a></p>
-                                    <p class="project--rating">
-                                    <span style="font-weight: bold;">{{obj.vote_ratio}}%</span> Postitive
-                                    Feedback ({{obj.vote_total}} Vote{{obj.vote_total|pluralize:"s"}})
-                                    </p>
-                                    <div class="project__tags">
-                                    <span class="tag tag--pill tag--main">
-                                    <small>NextJS</small>
-                                    </span>
-                                    <span class="tag tag--pill tag--main">
-                                    <small>GraphQL</small>
-                                    </span>
-                                    <span class="tag tag--pill tag--main">
-                                    <small>TypeScript</small>
-                                    </span>
-                                    </div>
-                                    </div>
+                                                <a class="project__author" href="profile.html">{{obj.owner|title}}</a></p>
+                                                <p class="project--rating">
+                                                <span style="font-weight: bold;">{{obj.vote_ratio}}%</span> Postitive
+                                                Feedback ({{obj.vote_total}} Vote{{obj.vote_total|pluralize:"s"}})
+                                            </p>
+
+                                            
+                                            <!-- Tags -->
+                                            <div class="project__tags">
+                                                {% for tag in obj.tags.all %}
+                                                <span class="tag tag--pill tag--main">
+                                                <small>{{tag.name}}</small>
+                                                </span>
+                                                {% endfor %}
+                                            </div>
+                                            <!-- END Tags -->
+                                            
+                                        </div>
                                     </a>
                                 </div>
                             </div>
