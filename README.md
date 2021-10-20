@@ -882,3 +882,9 @@ This is my exercise based on tutorials by Dennis on Udemy
 
         modified:   README.md
         modified:   users/models.py
+
+
+#### 17.3 Create signals (post_save) - create a new profile and print out the instance Sender and Reciever
+
+        modified:   README.md
+        modified:   users/models.py

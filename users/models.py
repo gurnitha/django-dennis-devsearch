@@ -43,7 +43,7 @@ class Skill(models.Model):
 
 # Signals
 def profileUpdate(sender, instance, created, **kwargs):
-    print('Modified a profile in the db and save!')
+    print('Create a new profile in the db and save!')
     print('Instance:', instance)
     print('CREATED:', created)
 
