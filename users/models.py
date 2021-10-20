@@ -41,9 +41,11 @@ class Skill(models.Model):
         return str(self.name)
 
 
-# Singnals
+# Signals
 def profileUpdate(sender, instance, created, **kwargs):
     print('Modified a profile in the db and save!')
+    print('Instance:', instance)
+    print('CREATED:', created)
 
 
 post_save.connect(profileUpdate, sender=Profile)
