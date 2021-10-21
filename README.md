@@ -940,6 +940,12 @@ This is my exercise based on tutorials by Dennis on Udemy
         new file:   users/signals.py
 
 
+#### 18.4 Testing signals
+
+        modified:   README.md
+        modified:   users/signals.py
+
+        NOTE: Nothing was triggered!
 
 
 
