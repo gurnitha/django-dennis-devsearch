@@ -931,3 +931,16 @@ This is my exercise based on tutorials by Dennis on Udemy
 
         modified:   README.md
         modified:   users/models.py
+
+
+#### 18.3 Putting signals in seperate file
+
+        modified:   README.md
+        modified:   users/models.py
+        new file:   users/signals.py
+
+
+
+
+
+        
