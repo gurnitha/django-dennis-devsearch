@@ -906,3 +906,14 @@ This is my exercise based on tutorials by Dennis on Udemy
 #### 17.6 House keeping - modified README.md
 
         modified:   README.md
+
+
+
+### 18. DJANGO SIGNALS - REAL PRACTICES
+### -----------------------------------------------------
+
+
+#### 18.1 Using django signals to create a profile when a new user is created
+
+        modified:   README.md
+        modified:   users/models.py

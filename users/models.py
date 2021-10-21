@@ -44,14 +44,25 @@ class Skill(models.Model):
 
 # Signals
 # @receiver(post_save, sender=Profile)
-def profileUpdate(sender, instance, created, **kwargs):
-    print('Create a new profile in the db and save!')
-    print('Instance:', instance)
-    print('CREATED:', created)
+def createProfile(sender, instance, created, **kwargs):
+    # Check if this was the first signal of new user
+    if created:
+        user = instance # <-- instance of the User
+        new_user = user # <-- user = new_user
+        # If so, then create profile
+        profile = Profile.objects.create(
+            # Use the user to create
+            user = new_user,
+            # Create username, email, first_name
+            username = new_user.username,
+            email = new_user.email,
+            name = new_user.first_name 
+        )
+
 
 '''Anytime delete a profile, it aslo delete the user'''
 def deleteUser(sender, instance, **kwargs):
     print('DELETING user ...')
 
-post_save.connect(profileUpdate, sender=Profile)
+post_save.connect(createProfile, sender=User)
 post_delete.connect(deleteUser, sender=Profile)
