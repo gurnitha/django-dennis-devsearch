@@ -42,8 +42,8 @@ class Skill(models.Model):
         return str(self.name)
 
 
-# Decorator
-@receiver(post_save, sender=Profile)
+# Signals
+# @receiver(post_save, sender=Profile)
 def profileUpdate(sender, instance, created, **kwargs):
     print('Create a new profile in the db and save!')
     print('Instance:', instance)
@@ -53,5 +53,5 @@ def profileUpdate(sender, instance, created, **kwargs):
 def deleteUser(sender, instance, **kwargs):
     print('DELETING user ...')
 
-# post_save.connect(profileUpdate, sender=Profile)
-# post_delete.connect(deleteUser, sender=Profile)
+post_save.connect(profileUpdate, sender=Profile)
+post_delete.connect(deleteUser, sender=Profile)

@@ -868,7 +868,7 @@ This is my exercise based on tutorials by Dennis on Udemy
 
 
 
-### 17. DJANGO SIGNALS
+### 17. DJANGO SIGNALS - EXERCISES
 ### -----------------------------------------------------
 
 
@@ -901,3 +901,8 @@ This is my exercise based on tutorials by Dennis on Udemy
 
         modified:   README.md
         modified:   users/models.py
+
+
+#### 17.6 House keeping - modified README.md
+
+        modified:   README.md
