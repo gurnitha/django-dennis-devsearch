@@ -948,5 +948,18 @@ This is my exercise based on tutorials by Dennis on Udemy
         NOTE: Nothing was triggered!
 
 
+#### 18.5 Use ready() method to trigger signals
 
+        Steps:
+
+        1. Open users/apps.py
+        2. def ready() method
+        3. import signals
+        4. Testing:
+           - open a user
+           - update it and save it
+           - see the result in the terminal
+
+        modified:   README.md
+        modified:   users/apps.py
         
