@@ -917,3 +917,17 @@ This is my exercise based on tutorials by Dennis on Udemy
 
         modified:   README.md
         modified:   users/models.py
+
+
+#### 18.2 Using django signals to delete a profile and his from users as well
+
+        NOTE:
+
+        Point 18.1 do like these:
+
+        1. Delete a user, the user's profile also deleted
+        2. Bu delete a profile, the user did not detele it
+
+
+        modified:   README.md
+        modified:   users/models.py

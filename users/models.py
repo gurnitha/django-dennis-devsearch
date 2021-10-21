@@ -62,7 +62,12 @@ def createProfile(sender, instance, created, **kwargs):
 
 '''Anytime delete a profile, it aslo delete the user'''
 def deleteUser(sender, instance, **kwargs):
-    print('DELETING user ...')
+    '''When a profile was deleted, use the profile's instance
+       to get the user and user delete method to delete
+       the user
+    '''
+    user = instance.user 
+    user.delete()
 
 post_save.connect(createProfile, sender=User)
 post_delete.connect(deleteUser, sender=Profile)
