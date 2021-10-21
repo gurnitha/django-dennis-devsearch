@@ -5,6 +5,7 @@ from django.db import models
 from django.contrib.auth.models import User
 import uuid
 from django.db.models.signals import post_save, post_delete
+from django.dispatch import receiver
 
 # Create your models here.
 
@@ -41,7 +42,8 @@ class Skill(models.Model):
         return str(self.name)
 
 
-# Signals
+# Decorator
+@receiver(post_save, sender=Profile)
 def profileUpdate(sender, instance, created, **kwargs):
     print('Create a new profile in the db and save!')
     print('Instance:', instance)
@@ -51,5 +53,5 @@ def profileUpdate(sender, instance, created, **kwargs):
 def deleteUser(sender, instance, **kwargs):
     print('DELETING user ...')
 
-post_save.connect(profileUpdate, sender=Profile)
-post_delete.connect(deleteUser, sender=Profile)
+# post_save.connect(profileUpdate, sender=Profile)
+# post_delete.connect(deleteUser, sender=Profile)

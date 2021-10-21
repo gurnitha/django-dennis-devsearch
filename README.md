@@ -894,3 +894,10 @@ This is my exercise based on tutorials by Dennis on Udemy
 
         modified:   README.md
         modified:   users/models.py
+
+
+#### 17.5 Create signals decorator (post_save) - modified  a profile in the db and save
+
+
+        modified:   README.md
+        modified:   users/models.py
