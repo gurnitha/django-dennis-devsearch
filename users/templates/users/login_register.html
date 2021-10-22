@@ -79,6 +79,8 @@
     <!-- =================== Login ======================= -->
     <div class="auth">
         <div class="card">
+
+        	<!-- Header -->
             <div class="auth__header text-center">
                 <a href="/">
                 <img src="{% static 'images/icon.svg' %}" alt="icon" />
@@ -86,8 +88,17 @@
                 <h3>Account Login</h3>
                 <p>Hello Developer, Welcome Back!</p>
             </div>
-            <form action="#" class="form auth__form">
-                <!-- Input:Email -->
+            <!-- END Header -->
+
+            <!-- Form -->
+            <form 
+				method="POST" 
+				action="{% url 'users:login' %}"  
+            	class="form auth__form">
+
+            	{% csrf_token %}
+
+                <!-- Input:Username -->
                 <div class="form__field">
                     <label for="formInput#text">Username: </label>
                     <input
@@ -114,10 +125,15 @@
                     <a href="forgetpassword.html">Forget Password?</a>
                 </div>
             </form>
+            <!-- END Form -->
+
+            <!-- link to sign up -->
             <div class="auth__alternative">
                 <p>Don’t have an Account?</p>
                 <a href="{% url 'users:register' %}">Sign Up</a>
             </div>
+            <!-- link to sign up -->
+
         </div>
     </div>
     <!-- =================== END Login ======================= -->
