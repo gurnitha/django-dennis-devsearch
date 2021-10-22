@@ -1027,3 +1027,19 @@ This is my exercise based on tutorials by Dennis on Udemy
 
         modified:   README.md
         modified:   templates/main.html
+
+
+#### 19.6 Logout - Add logout functionality
+
+        Steps:
+
+        1. Import logout method
+        2. Create logoutUser view method
+        3. Create urls for logout
+        4. In navbar, add link to logout
+        5. Try it to see the result 
+
+        modified:   README.md
+        modified:   templates/main.html
+        modified:   users/urls.py
+        modified:   users/views.py

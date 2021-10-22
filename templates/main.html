@@ -39,7 +39,7 @@
                     <!-- Showing log out menu to the logged in user -->
                     {% if request.user.is_authenticated %}
                     <li class="header__menuItem">
-                        <a href="{% url 'users:login' %}" 
+                        <a href="{% url 'users:logout' %}" 
                             class="btn btn--sub">Log out</a>
                     </li>
                     <!-- Showing log in/sign up menu to the un-logged in user -->
