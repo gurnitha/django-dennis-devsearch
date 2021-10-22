@@ -11,6 +11,11 @@ from projects.models import Tag
 
 # loginUser view
 def loginUser(request):
+	# Check if the request is POST
+	if request.method == 'POST':
+		# Print out the input in the terminal
+		print(request.POST)
+	
 	return render(request, 'users/login_register.html')
 	
 

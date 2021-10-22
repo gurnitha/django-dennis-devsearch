@@ -991,6 +991,18 @@ This is my exercise based on tutorials by Dennis on Udemy
 
         1. Add basic html form
         2. See the resutl
-        
+
         modified:   README.md
         modified:   users/templates/users/login_register.html
+
+
+#### 19.3 Login Part 3 - Adding the logic
+
+        Steps:
+
+        1. Define the logic
+        2. Test it out
+        3. See the resutl
+
+        modified:   README.md
+        modified:   users/views.py
