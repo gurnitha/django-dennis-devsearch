@@ -1169,3 +1169,10 @@ This is my exercise based on tutorials by Dennis on Udemy
         modified:   README.md
         new file:   users/forms.py
         modified:   users/views.py
+
+
+
+#### 19.17 REGISTER Part 7 - Change reg form field from 'First name' to 'Name'
+
+        modified:   README.md
+        modified:   users/forms.py
