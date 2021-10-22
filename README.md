@@ -1013,6 +1013,17 @@ This is my exercise based on tutorials by Dennis on Udemy
         Steps:
 
         1. See 6 steps to authenticate user to login and test it out
-        
+
         modified:   README.md
         modified:   users/views.py
+
+
+#### 19.5 Login Part 5 - Showing logout menu to logged in user
+
+        Steps:
+
+        1. Add conditional to the menu
+        2. See the result
+
+        modified:   README.md
+        modified:   templates/main.html
