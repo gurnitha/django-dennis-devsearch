@@ -1287,3 +1287,13 @@ This is my exercise based on tutorials by Dennis on Udemy
         modified:   README.md
         modified:   templates/main.html
         modified:   users/views.py
+
+
+
+#### 19.32 REGISTER - LOGIN Part 6.12 - Removing the flash message
+
+
+        modified:   static/uikit/app.js
+        modified:   templates/main.html
+
+
