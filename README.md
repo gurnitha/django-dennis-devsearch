@@ -1224,3 +1224,11 @@ This is my exercise based on tutorials by Dennis on Udemy
 
         modified:   README.md
         modified:   users/templates/users/login_register.html
+
+
+
+#### 19.24 REGISTER - LOGIN Part 6.2 - Removing some input fields
+
+
+        modified:   README.md
+        modified:   users/templates/users/login_register.html
