@@ -1263,3 +1263,10 @@ This is my exercise based on tutorials by Dennis on Udemy
 
         modified:   README.md
         modified:   users/forms.py
+
+
+#### 19.29 REGISTER - LOGIN Part 6.9 - Adding help_text to register form
+
+
+        modified:   README.md
+        modified:   users/forms.py
