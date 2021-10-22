@@ -1278,3 +1278,12 @@ This is my exercise based on tutorials by Dennis on Udemy
 
         modified:   README.md
         modified:   users/templates/users/login_register.html
+
+
+
+#### 19.31 REGISTER - LOGIN Part 6.11 - Adding style to flash messages
+
+
+        modified:   README.md
+        modified:   templates/main.html
+        modified:   users/views.py
