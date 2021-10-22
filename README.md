@@ -1269,4 +1269,12 @@ This is my exercise based on tutorials by Dennis on Udemy
 
 
         modified:   README.md
-        modified:   users/forms.py
+        modified:   users/templates/users/login_register.html
+
+
+
+#### 19.30 REGISTER - LOGIN Part 6.10 - Adding alert/error message to register form
+
+
+        modified:   README.md
+        modified:   users/templates/users/login_register.html
