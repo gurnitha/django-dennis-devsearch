@@ -1208,3 +1208,19 @@ This is my exercise based on tutorials by Dennis on Udemy
 
         modified:   README.md
         modified:   users/templates/users/login_register.html
+
+
+
+#### 19.22 REGISTER - LOGIN Part 5 - Adding functionality to login form
+
+
+        modified:   README.md
+        modified:   users/templates/users/login_register.html
+
+
+
+#### 19.23 REGISTER - LOGIN Part 6.1 - Adding functionality to register form (arranged the layout)
+
+
+        modified:   README.md
+        modified:   users/templates/users/login_register.html
