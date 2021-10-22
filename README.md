@@ -1184,3 +1184,11 @@ This is my exercise based on tutorials by Dennis on Udemy
         modified:   README.md
         modified:   users/templates/users/login_register.html
         new file:   users/templates/users/login_register_ori.html
+
+
+
+#### 19.19 REGISTER - LOGIN Part 2 - Adding conditional to show login or register form
+
+
+        modified:   README.md
+        modified:   users/templates/users/login_register.html

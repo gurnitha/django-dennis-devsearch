@@ -6,6 +6,7 @@
 
 	{% block content %}
 
+	{% if page == 'register' %}
     <!-- =================== Register ======================= -->
     <div class="auth">
         <div class="card">
@@ -73,6 +74,8 @@
     </div>
     <!-- ===================END Register ======================= -->
 
+    {% else %}
+
     <!-- =================== Login ======================= -->
     <div class="auth">
         <div class="card">
@@ -118,5 +121,7 @@
         </div>
     </div>
     <!-- =================== END Login ======================= -->
+
+	{% endif %}
 
 	{% endblock content %}
