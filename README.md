@@ -1126,6 +1126,17 @@ This is my exercise based on tutorials by Dennis on Udemy
         2. Define the UserCreationForm in registerUser view
         3. Use the instance of the UserCreationForm
         4. See the result
-        
+
         modified:   users/templates/users/login_register.html
+        modified:   users/views.py
+
+
+
+#### 19.14 REGISTER Part 4 - Add logic to register a user
+
+        Steps:
+
+        1. Add the logic
+        2. Register a new user for a test
+
         modified:   users/views.py

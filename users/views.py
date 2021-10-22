@@ -84,6 +84,28 @@ def logoutUser(request):
 def registerUser(request):
 	page = 'register'
 	form = UserCreationForm
+
+	# Logic to register user
+
+	# 1. If the request is POST, then
+	#    use UserCreationForm
+	if request.method == 'POST':
+		form = UserCreationForm(request.POST)
+
+		# 2. Authenticate the form, 
+		#    get the user's instance,
+		#    create temporary data
+		#    and don't save right away,
+		#    modify the instances to lowercase
+		#    then save the instace.
+		if form.is_valid():
+			user = form.save(commit=False)
+			user.username = user.username.lower()
+			user.save()
+
+		# Message
+		messages.success(request, 'User account was successfully created!')
+
 	context = {
 		'page':page,
 		'form':form}
