@@ -2,6 +2,7 @@
 
 # Django modules
 from django.shortcuts import render, redirect
+from django.contrib.auth.decorators import login_required
 
 # locals
 from .models import Project
@@ -29,7 +30,7 @@ def project(request, pk):
 
 	return render(request, 'projects/single-project.html', context)
 
-
+@login_required(login_url="users:login")
 def createProject(request):
 
 	# Bring in the ProjectForm class
@@ -58,6 +59,7 @@ def createProject(request):
 	return render(request, 'projects/project_form.html', context)
 
 
+@login_required(login_url="users:login")
 def updateProject(request, pk):
 
 	# Get the project instance by its id
@@ -90,6 +92,7 @@ def updateProject(request, pk):
 	return render(request, 'projects/project_form.html', context)
 
 
+@login_required(login_url="users:login")
 def deleteProject(request, pk):
 	project = Project.objects.get(id=pk)
 	if request.method == "POST":

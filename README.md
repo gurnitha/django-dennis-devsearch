@@ -1055,3 +1055,18 @@ This is my exercise based on tutorials by Dennis on Udemy
         modified:   README.md
         modified:   users/views.py
 
+
+#### 19.8 User restriction - Blocking user to required authentication pages
+
+        Steps:
+
+        1. Import login_required method
+        2. Add login_required to createProject
+        3. Add login_required to updateProject
+        4. Add login_required to deleteProject
+        5. Test it out to see the result
+
+        modified:   README.md
+        modified:   projects/views.py
+
+
