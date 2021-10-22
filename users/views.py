@@ -78,6 +78,14 @@ def logoutUser(request):
 	messages.error(request, 'User was logged out!')
 	return redirect('users:login')
 
+
+# registerUser view
+def registerUser(request):
+	page = 'register'
+	context = {'page':page}
+	return render(request, 'users/login_register.html', context)
+
+
 # Profiles view
 def profiles(request):
 	profiles = Profile.objects.all()

@@ -1093,3 +1093,15 @@ This is my exercise based on tutorials by Dennis on Udemy
         modified:   README.md
         modified:   templates/main.html
         modified:   users/views.py
+
+
+#### 19.11 REGISTER - Create registerUser view method (VUrls)
+
+        Steps:
+
+        1. Create userRegister view
+        2. Create path
+        
+        modified:   README.md
+        modified:   users/urls.py
+        modified:   users/views.py
