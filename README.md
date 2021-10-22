@@ -1043,3 +1043,15 @@ This is my exercise based on tutorials by Dennis on Udemy
         modified:   templates/main.html
         modified:   users/urls.py
         modified:   users/views.py
+
+
+#### 19.7 User restriction - Don't show login page to LOGGED IN user
+
+        Steps:
+
+        1. Use is_authenticated method
+        2. Test it out to see the result
+
+        modified:   README.md
+        modified:   users/views.py
+

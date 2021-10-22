@@ -13,6 +13,12 @@ from projects.models import Tag
 
 # loginUser view
 def loginUser(request):
+
+	# Don't show logn page to LOGGED IN user or
+	# redirect logged in user to profiles page
+	if request.user.is_authenticated:
+		return redirect('users:profiles')
+
 	# 1. If POST request, get the input data
 	#    that is the username and password
 	if request.method == 'POST':
