@@ -1200,3 +1200,11 @@ This is my exercise based on tutorials by Dennis on Udemy
 
         modified:   README.md
         modified:   users/templates/users/login_register.html
+
+
+
+#### 19.21 REGISTER - LOGIN Part 4 - Loading icon images
+
+
+        modified:   README.md
+        modified:   users/templates/users/login_register.html
