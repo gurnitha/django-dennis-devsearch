@@ -5,6 +5,7 @@ from django.shortcuts import render, redirect
 from django.contrib.auth import login, authenticate, logout
 from django.contrib.auth.models import User
 from django.contrib import messages
+from django.contrib.auth.forms import UserCreationForm
 
 # Locals
 from . models import Profile, Skill 
@@ -82,7 +83,10 @@ def logoutUser(request):
 # registerUser view
 def registerUser(request):
 	page = 'register'
-	context = {'page':page}
+	form = UserCreationForm
+	context = {
+		'page':page,
+		'form':form}
 	return render(request, 'users/login_register.html', context)
 
 

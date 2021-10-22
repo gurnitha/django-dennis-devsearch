@@ -10,13 +10,27 @@
 
 		<h1>Register User</h1>
 
+		<form 
+			method="POST", 
+			action="{% url 'users:register' %}">
+			{% csrf_token %}
+
+			<!-- Rendering the form instance -->
+			{{ form.as_p }}
+			
+			<input 
+				type="submit" 
+				name="" 
+				value="Register User">
+		</form>
+
 		<p>Already have account?
 			<a href="{% url 'users:login' %}">Log in</a>
 		</p>
 
 		{% else %}
 	</div>
-	
+
 	<br><br>
 
 	<div style="margin-left: 200px;">

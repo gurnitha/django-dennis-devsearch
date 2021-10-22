@@ -1113,6 +1113,19 @@ This is my exercise based on tutorials by Dennis on Udemy
 
         1. Add conditionals
         2. See the results
-        
+
         modified:   README.md
         modified:   users/templates/users/login_register.html
+
+
+#### 19.13 REGISTER Part 3 - using UserCreationForm
+
+        Steps:
+
+        1. Import UserCreationForm module
+        2. Define the UserCreationForm in registerUser view
+        3. Use the instance of the UserCreationForm
+        4. See the result
+        
+        modified:   users/templates/users/login_register.html
+        modified:   users/views.py
