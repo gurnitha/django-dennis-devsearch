@@ -103,12 +103,21 @@ def registerUser(request):
 			user.username = user.username.lower()
 			user.save()
 
-		# Message
-		messages.success(request, 'User account was successfully created!')
+			# Message
+			messages.success(request, 'User account was successfully created!')
+
+			# Automatically Log in user after signing up
+			login(request, user)
+			return redirect('users:profiles')
+
+		# 3. If register faild
+		else:
+			messages.success(request, 'An error occurred during registration!')
 
 	context = {
 		'page':page,
 		'form':form}
+		
 	return render(request, 'users/login_register.html', context)
 
 

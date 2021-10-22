@@ -1140,3 +1140,16 @@ This is my exercise based on tutorials by Dennis on Udemy
         2. Register a new user for a test
 
         modified:   users/views.py
+
+
+
+#### 19.15 REGISTER Part 5 - Authomatically login user after Signing up
+
+        Steps:
+
+        1. Use login session to login the new created user
+        2. Redirect him to profiles page
+        3. Show failed message if registration failed
+        4. Test it out
+
+        modified:   users/views.py
