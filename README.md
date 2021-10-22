@@ -1256,3 +1256,10 @@ This is my exercise based on tutorials by Dennis on Udemy
 
         modified:   README.md
         modified:   users/templates/users/login_register.html
+
+
+#### 19.28 REGISTER - LOGIN Part 6.8 - Looping the form field Part 3 (styling)
+
+
+        modified:   README.md
+        modified:   users/forms.py
