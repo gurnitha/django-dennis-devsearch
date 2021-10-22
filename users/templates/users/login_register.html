@@ -23,8 +23,13 @@
 
             <!-- Form -->
             <form 
-            	action="#" 
+				method="POST" 
+				action="{% url 'users:register' %}"
             	class="form auth__form">
+
+            	{% csrf_token %}
+
+            	{{ form.as_p }}
 
                 <!-- Input:Text -->
                 <div class="form__field">
@@ -41,7 +46,7 @@
                 <div class="auth__actions">
                     <input class="btn btn--sub btn--lg" type="submit" value="Sign  In" />
                 </div>
-                
+
             </form>
             <!-- END Form -->
 

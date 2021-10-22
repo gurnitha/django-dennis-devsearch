@@ -1232,3 +1232,11 @@ This is my exercise based on tutorials by Dennis on Udemy
 
         modified:   README.md
         modified:   users/templates/users/login_register.html
+
+
+
+#### 19.25 REGISTER - LOGIN Part 6.3 - Add method, csrf_token and redering the {{form.as_p}}
+
+
+        modified:   README.md
+        modified:   users/templates/users/login_register.html
