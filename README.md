@@ -1153,3 +1153,19 @@ This is my exercise based on tutorials by Dennis on Udemy
         4. Test it out
 
         modified:   users/views.py
+
+
+
+#### 19.16 REGISTER Part 6 - Create CustomUserCreationForm
+
+        Steps:
+
+        1. Create file users/forms.py 
+        2. CustomUserCreationForm
+        3. Remove UserCreationForm
+        4. Import and use it in the registerUser view method
+        5. Test it out and see the result
+
+        modified:   README.md
+        new file:   users/forms.py
+        modified:   users/views.py
