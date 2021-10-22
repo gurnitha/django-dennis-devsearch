@@ -1176,3 +1176,11 @@ This is my exercise based on tutorials by Dennis on Udemy
 
         modified:   README.md
         modified:   users/forms.py
+
+
+
+#### 19.18 REGISTER - LOGIN Part 1 - Adding template theme to login_register.html
+
+        modified:   README.md
+        modified:   users/templates/users/login_register.html
+        new file:   users/templates/users/login_register_ori.html
