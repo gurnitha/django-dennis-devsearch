@@ -1248,3 +1248,11 @@ This is my exercise based on tutorials by Dennis on Udemy
 
         modified:   README.md
         modified:   users/templates/users/login_register.html
+
+
+
+#### 19.27 REGISTER - LOGIN Part 6.7 - Looping the form field Part 2 (rendering label and input field)
+
+
+        modified:   README.md
+        modified:   users/templates/users/login_register.html

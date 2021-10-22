@@ -31,19 +31,10 @@
 
             	{% for field in form %}
                 <div class="form__field">
-                    <label for="formInput#text">Full Name: </label>
-                    <input
-                        class="input input--text"
-                        id="formInput#text"
-                        type="text"
-                        name="text"
-                        placeholder="e.g. Dennis Ivanov"
-                        />
+                    <label for="formInput#text">{{field.label}}</label>
+                    {{field}}
                 </div>
             	{% endfor %}
-
-            	{{ form.as_p }}
-
 
 
                 <div class="auth__actions">
