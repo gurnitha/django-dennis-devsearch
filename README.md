@@ -996,7 +996,7 @@ This is my exercise based on tutorials by Dennis on Udemy
         modified:   users/templates/users/login_register.html
 
 
-#### 19.3 Login Part 3 - Adding the logic
+#### 19.3 Login Part 3 - Adding the basics logic
 
         Steps:
 
@@ -1004,5 +1004,15 @@ This is my exercise based on tutorials by Dennis on Udemy
         2. Test it out
         3. See the resutl
 
+        modified:   README.md
+        modified:   users/views.py
+
+
+#### 19.4 Login Part 4 - Adding the authentication logic
+
+        Steps:
+
+        1. See 6 steps to authenticate user to login and test it out
+        
         modified:   README.md
         modified:   users/views.py
