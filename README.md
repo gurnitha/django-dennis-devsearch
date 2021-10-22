@@ -1192,3 +1192,11 @@ This is my exercise based on tutorials by Dennis on Udemy
 
         modified:   README.md
         modified:   users/templates/users/login_register.html
+
+
+
+#### 19.20 REGISTER - LOGIN Part 3 - Adding links to login and register
+
+
+        modified:   README.md
+        modified:   users/templates/users/login_register.html
