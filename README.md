@@ -962,4 +962,24 @@ This is my exercise based on tutorials by Dennis on Udemy
 
         modified:   README.md
         modified:   users/apps.py
+
+
+
+### 19. AUTHENTICATION
+### -----------------------------------------------------
+
+
+#### 19.1 Login Part 1 - Create login_register page VTUrls
+
+        Steps:
+
+        1. Create users/templates/users/login_register.html file
+        2. Extends the main page
+        3. Define login views method
+        4. In menu add link
         
+        modified:   README.md
+        modified:   templates/main.html
+        new file:   users/templates/users/login_register.html
+        modified:   users/urls.py
+        modified:   users/views.py

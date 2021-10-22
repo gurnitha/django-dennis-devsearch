@@ -9,6 +9,11 @@ from projects.models import Tag
 
 # Create your views here.
 
+# loginUser view
+def loginUser(request):
+	return render(request, 'users/login_register.html')
+	
+
 # Profiles view
 def profiles(request):
 	profiles = Profile.objects.all()
