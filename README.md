@@ -1070,3 +1070,12 @@ This is my exercise based on tutorials by Dennis on Udemy
         modified:   projects/views.py
 
 
+#### 19.9 Hiding the Add Project menu from un-logged in user
+
+        Steps:
+
+        1. Move the Add Project menu to inside the request.user.is_authenticated conditional
+        2. Check the resutl
+        
+        modified:   README.md
+        modified:   templates/main.html

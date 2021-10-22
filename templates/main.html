@@ -34,16 +34,25 @@
                     <li class="header__menuItem"><a href="{% url 'projects:projects' %}">Projects</a></li>
                     <li class="header__menuItem"><a href="inbox.html">Inbox</a></li>
                     <li class="header__menuItem"><a href="account.html">My Account</a></li>
-                    <li class="header__menuItem"><a href="{% url 'projects:create-project' %}">Add Project</a></li>
+                    
 
                     <!-- Showing log out menu to the logged in user -->
                     {% if request.user.is_authenticated %}
+                    
+                    <!-- Add project -->
+                    <li class="header__menuItem">
+                        <a href="{% url 'projects:create-project' %}">Add Project</a>
+                    </li>
+                    
+                    <!-- Log out -->
                     <li class="header__menuItem">
                         <a href="{% url 'users:logout' %}" 
                             class="btn btn--sub">Log out</a>
                     </li>
+                    
                     <!-- Showing log in/sign up menu to the un-logged in user -->
                     {% else %}
+                    <!-- Log in / Sign up -->
                     <li class="header__menuItem">
                         <a href="{% url 'users:login' %}" 
                             class="btn btn--sub">Log in/Sign up</a>
