@@ -1076,6 +1076,20 @@ This is my exercise based on tutorials by Dennis on Udemy
 
         1. Move the Add Project menu to inside the request.user.is_authenticated conditional
         2. Check the resutl
-        
+
         modified:   README.md
         modified:   templates/main.html
+
+
+#### 19.10 MESSAGES - Adding flash error message to login and logout
+
+        Steps:
+
+        1. Import messages modules
+        2. Use messages module with error method
+        3. Add message tags to main page
+        4. See the results
+
+        modified:   README.md
+        modified:   templates/main.html
+        modified:   users/views.py

@@ -4,6 +4,7 @@
 from django.shortcuts import render, redirect
 from django.contrib.auth import login, authenticate, logout
 from django.contrib.auth.models import User
+from django.contrib import messages
 
 # Locals
 from . models import Profile, Skill 
@@ -33,9 +34,10 @@ def loginUser(request):
 		try:
 			user = User.objects.get(username=username)
 		# 3. If user does not exist in db
-		# or the credentials is not correct
+		#    or the credentials is not correct
+		#    show flash message
 		except:
-			print('Username does not exitst!')
+			messages.error(request, 'Username does not exitst!')
 
 		# 4. If user exists, authenticate it, then return user
 		user = authenticate(
@@ -53,8 +55,17 @@ def loginUser(request):
 
 		# 6. If user exist, but its credentials incorrect
 		else:
-			print('Username OR password is incorrect. Try it again ...')
+			messages.error(request, 'Username OR password is incorrect. Try it again ...')
 			return redirect('users:login')
+
+
+		''' NOTE:
+			If username and password NOT CORRECT it will show messages like this:
+			---------
+			Username does not exitst!
+			Username OR password is incorrect. Try it again ... 
+			---------
+		'''
 	
 	return render(request, 'users/login_register.html')
 	
@@ -64,6 +75,7 @@ def logoutUser(request):
 	# Kill the session using the logout method
 	# and redirect user to login page
 	logout(request)
+	messages.error(request, 'User was logged out!')
 	return redirect('users:login')
 
 # Profiles view
