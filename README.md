@@ -1095,13 +1095,24 @@ This is my exercise based on tutorials by Dennis on Udemy
         modified:   users/views.py
 
 
-#### 19.11 REGISTER - Create registerUser view method (VUrls)
+#### 19.11 REGISTER Part 1 - Create registerUser view method (VUrls)
 
         Steps:
 
         1. Create userRegister view
         2. Create path
-        
+
         modified:   README.md
         modified:   users/urls.py
         modified:   users/views.py
+
+
+#### 19.12 REGISTER Part 2 - Adding conditional to login-register form
+
+        Steps:
+
+        1. Add conditionals
+        2. See the results
+        
+        modified:   README.md
+        modified:   users/templates/users/login_register.html

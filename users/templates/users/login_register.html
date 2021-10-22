@@ -5,28 +5,51 @@
 
 	{% block content %}
 
-	<h1>Login-Register</h1>
+	<div style="margin-left: 200px;">
+		{% if page == 'register' %}
 
-	<form 
-		method="POST" 
-		action="{% url 'users:login' %}" 
-		class="">
-		{% csrf_token %}
+		<h1>Register User</h1>
 
-		<input 
-			type="text" 
-			name="username"
-			placeholder="Username">
+		<p>Already have account?
+			<a href="{% url 'users:login' %}">Log in</a>
+		</p>
 
-		<input 
-			type="password" 
-			name="password"
-			placeholder="Enter password">
+		{% else %}
+	</div>
+	
+	<br><br>
 
-		<input 
-			type="submit" 
-			name=""
-			value="Login">
-	</form>
+	<div style="margin-left: 200px;">
+		
+		<h1>Log in</h1>
+
+		<form 
+			method="POST" 
+			action="{% url 'users:login' %}" 
+			class="">
+			{% csrf_token %}
+
+			<input 
+				type="text" 
+				name="username"
+				placeholder="Username">
+
+			<input 
+				type="password" 
+				name="password"
+				placeholder="Enter password">
+
+			<input 
+				type="submit" 
+				name=""
+				value="Login">
+
+			<p>Don't have account yet?
+				<a href="{% url 'users:register' %}">Sign up</a>
+			</p>
+		</form>
+	</div>
+
+	{% endif %}
 
 	{% endblock content %}
