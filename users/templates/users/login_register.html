@@ -29,9 +29,7 @@
 
             	{% csrf_token %}
 
-            	{{ form.as_p }}
-
-                <!-- Input:Text -->
+            	{% for field in form %}
                 <div class="form__field">
                     <label for="formInput#text">Full Name: </label>
                     <input
@@ -42,6 +40,11 @@
                         placeholder="e.g. Dennis Ivanov"
                         />
                 </div>
+            	{% endfor %}
+
+            	{{ form.as_p }}
+
+
 
                 <div class="auth__actions">
                     <input class="btn btn--sub btn--lg" type="submit" value="Sign  In" />
