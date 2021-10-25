@@ -1350,3 +1350,9 @@ This is my exercise based on tutorials by Dennis on Udemy
 
         modified:   README.md
         modified:   templates/main.html
+
+
+#### 21.3 Adding template theme to account page
+
+        modified:   README.md
+        modified:   users/templates/users/account.html
