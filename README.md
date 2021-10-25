@@ -1345,3 +1345,8 @@ This is my exercise based on tutorials by Dennis on Udemy
         modified:   users/urls.py
         modified:   users/views.py
 
+
+#### 21.2 Hiding account menu from un-logged in user
+
+        modified:   README.md
+        modified:   templates/main.html
