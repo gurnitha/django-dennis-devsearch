@@ -1356,3 +1356,21 @@ This is my exercise based on tutorials by Dennis on Udemy
 
         modified:   README.md
         modified:   users/templates/users/account.html
+
+
+#### 21.4 Loading user information
+
+        modified:   README.md
+        new file:   static/images/log-good.JPG
+        new file:   static/images/logo-1.JPG
+        new file:   static/images/logo-1_kqRgXsk.JPG
+        new file:   static/images/logo_kincir.JPG
+        modified:   users/templates/users/account.html
+        modified:   users/views.py
+
+        NOTE:
+
+        1. Logged in to access account page
+        2. Logged in user can create project, but
+           MUST manually add the owner of the project in admin by superuser
+           
