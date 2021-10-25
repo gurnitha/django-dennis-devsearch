@@ -1297,3 +1297,36 @@ This is my exercise based on tutorials by Dennis on Udemy
         modified:   templates/main.html
 
 
+
+### 20. LINK MODIFICATION
+### -----------------------------------------------------
+
+
+#### 20.1 Modified link - to eas error from going to specific urer profile, but to profiles
+
+
+        NOTE:
+        
+        1. Page: profiles.html 
+        2. The link: {% url 'users:user-profiles' project.owner.id %}
+        3. The link intends to go to specific user's profile
+
+        ERROR:
+
+        1. When go to: http://127.0.0.1:8000/project/
+           it creates error like this:
+           
+           Reverse for 'user-profile' with arguments '('',)' not found. 1 pattern(s) tried: ['profile/(?P<pk>[^/]+)/$']
+
+        SOLUTION:
+
+        Instead of going to specifik profile, but go to profiles (profile list)
+
+        1. Change the link:
+
+        From: {% url 'users:user-profiles' project.owner.id %}
+
+        To: {% url 'users:profiles' %}
+
+        modified:   README.md
+        modified:   projects/templates/projects/projects.html
