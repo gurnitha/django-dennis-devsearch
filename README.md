@@ -1330,3 +1330,18 @@ This is my exercise based on tutorials by Dennis on Udemy
 
         modified:   README.md
         modified:   projects/templates/projects/projects.html
+
+
+
+### 21. USER ACTIONS
+### -----------------------------------------------------
+
+
+#### 21.1 Create account page VTUrls + link in navbar
+
+        modified:   README.md
+        modified:   templates/main.html
+        new file:   users/templates/users/account.html
+        modified:   users/urls.py
+        modified:   users/views.py
+

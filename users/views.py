@@ -155,3 +155,9 @@ def userProfile(request, pk):
 		'tags':tags
 	}
 	return render(request, 'users/user-profile.html', context)
+
+
+# userAccount view
+def userAccount(request):
+	context = {}
+	return render(request, 'users/account.html', context)
