@@ -1410,7 +1410,10 @@ This is my exercise based on tutorials by Dennis on Udemy
         modified:   users/signals.py
 
 
+#### 21.10 Limiting the form fields to show on the editAccount page
 
+        modified:   README.md
+        modified:   users/forms.py
 
 
 
