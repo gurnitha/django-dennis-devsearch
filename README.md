@@ -1518,6 +1518,11 @@ This is my exercise based on tutorials by Dennis on Udemy
         modified:   users/views.py
 
 
+#### 23.2 CRUD-Create Part 2: Create SkillForm model
+
+        modified:   README.md
+        modified:   users/forms.py
+
 
 
 
