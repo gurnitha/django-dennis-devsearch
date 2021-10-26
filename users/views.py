@@ -12,7 +12,7 @@ from django.contrib.auth.decorators import login_required
 # Locals
 from . models import Profile, Skill 
 from projects.models import Tag
-from . forms import CustomUserCreationForm, ProfileForm
+from . forms import CustomUserCreationForm, ProfileForm, SkillForm
 
 # Create your views here.
 
@@ -208,7 +208,10 @@ def editAccount(request):
 
 # createSkill view
 def createSkill(request):
-	context = {}
+	form = SkillForm()
+	context = {
+		'form':form
+	}
 	return render(request, 'users/skill_form.html', context)
 
 

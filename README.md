@@ -1524,7 +1524,11 @@ This is my exercise based on tutorials by Dennis on Udemy
         modified:   users/forms.py
 
 
+#### 23.3 CRUD-Create Part 3: Use SkillForm within the createSkill method and render it to skill_form
 
+        modified:   README.md
+        modified:   users/templates/users/skill_form.html
+        modified:   users/views.py
 
 
 
