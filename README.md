@@ -1404,6 +1404,11 @@ This is my exercise based on tutorials by Dennis on Udemy
         modified:   users/views.py
 
 
+#### 21.9 Create updateUser signals to update profile and automatically update user, but NOT the oversit
+
+        modified:   README.md
+        modified:   users/signals.py
+
 
 
 
