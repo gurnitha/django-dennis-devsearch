@@ -15,7 +15,7 @@
                         <div class="card__body dev">
 
                         	<!-- Aside profile -->
-                            <a class="tag tag--pill tag--main settings__btn" href="#"><i class="im im-edit"></i> Edit</a>
+                            <a class="tag tag--pill tag--main settings__btn" href="{% url 'users:edit-account' %}"><i class="im im-edit"></i> Edit</a>
                             <img class="avatar avatar--xl dev__avatar" src="{{profile.profile_image.url}}" />
                             <h2 class="dev__name">{{profile.name|title}}</h2>
                             <p class="dev__title">{{profile.short_info}}</p>

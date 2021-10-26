@@ -1383,6 +1383,11 @@ This is my exercise based on tutorials by Dennis on Udemy
         modified:   users/views.py
 
 
+#### 21.6 Link Account page with the editAccount page
+
+        modified:   README.md
+        modified:   users/templates/users/account.html
+
 
 
 
