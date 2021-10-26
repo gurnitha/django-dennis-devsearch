@@ -1433,7 +1433,14 @@ This is my exercise based on tutorials by Dennis on Udemy
         modified:   README.md
         modified:   projects/templates/projects/projects.html
 
-        
+
+#### 21.14 Sign up for a new account and redirect a newly signed up user to edit-account page
+
+        modified:   README.md
+        new file:   static/images/profiles/Nakula.PNG
+        new file:   static/images/profiles/ing.jfif
+        modified:   users/views.py
+
 
 
 

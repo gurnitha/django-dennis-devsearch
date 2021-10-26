@@ -113,7 +113,7 @@ def registerUser(request):
 
 			# Automatically Log in user after signing up
 			login(request, user)
-			return redirect('users:profiles')
+			return redirect('users:edit-account')
 
 		# 3. If register faild
 		else:
