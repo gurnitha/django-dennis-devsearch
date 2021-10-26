@@ -233,6 +233,8 @@ def createSkill(request):
 @login_required(login_url='users:login')
 def updateSkill(request, pk):
 
+	page = 'update'
+
 	profile = request.user.profile
 	skill = profile.skill_set.get(id=pk)
 	form = SkillForm(instance=skill)
@@ -244,7 +246,8 @@ def updateSkill(request, pk):
 			return redirect('users:account')
 
 	context = {
-		'form':form
+		'form':form,
+		'page':page,
 	}
 	
 	return render(request, 'users/skill_form.html', context)

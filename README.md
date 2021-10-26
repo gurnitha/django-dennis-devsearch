@@ -1559,8 +1559,11 @@ This is my exercise based on tutorials by Dennis on Udemy
         modified:   users/views.py
 
 
+#### 23.8 CRUD-UPDATE: Showing Create Skill and/or hidding Update Skill skill_form header 
 
-
+        modified:   README.md
+        modified:   users/templates/users/skill_form.html
+        modified:   users/views.py
 
 
 

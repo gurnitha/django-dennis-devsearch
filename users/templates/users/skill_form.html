@@ -11,10 +11,20 @@
 	<main class="formPage my-xl">
         <div class="content-box">
             <div class="formWrapper">
-                <a class="backButton" href="#"><i class="im im-angle-left"></i></a>
+                <a class="backButton" href="{% url 'users:account' %}"><i class="im im-angle-left"></i></a>
                 <br>
 
-				<h3>Create Skill</h3>
+                <!-- Showing Update Skill -->
+                {% if page == 'update' %}
+
+                	<h3>Update Skill</h3>
+                
+                <!-- Showing Create Skill -->
+                {% else %}
+
+					<h3>Create Skill</h3>
+					
+				{% endif %}
 
                 <!----------- Form ----------->
                 <form class="form" action="" method="POST" enctype="multipart/form-data">
