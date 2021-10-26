@@ -1475,9 +1475,10 @@ This is my exercise based on tutorials by Dennis on Udemy
         new file:   static/images/logo_conblock.PNG
 
 
+#### 22.3 CRUD - UPDATE :  Add logic to updateProject method for a specific user to update a project
 
-
-
+        modified:   README.md
+        modified:   projects/views.py
 
 
 

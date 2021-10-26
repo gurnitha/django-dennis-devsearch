@@ -95,26 +95,56 @@ def createProject(request):
 @login_required(login_url="users:login")
 def updateProject(request, pk):
 
-	# Get the project instance by its id
-	project = Project.objects.get(id=pk)
+	# 1. To create project, user MUST logged in first.
+	#    Then get profile of the logged in user
+	#    it represents OneToOne relstionship
+	profile = request.user.profile
 
-	# Instantiate the ProjectForm class
-	# with parameter the instance of the project
+	# 2. Get the project's instance by its id
+	#    that belongs to the logged in user
+	#    or get all the projects of that user
+	project = profile.project_set.get(id=pk)
+
+	# 3. Instantiate the ProjectForm class
+	#    with parameter the instance of the project
 	form = ProjectForm(instance=project)
 
-	# If there is POST request, process the form
+	# 4. If there is POST request, process the form
 	if request.method == "POST":
 
 		# Tesing the form: fillin the form and submit it
 		# print(request.POST) # tested :)
 
-		# Instantiate the ProjectForm class
-		form = ProjectForm(request.POST, instance=project)
-		# Check if form input is valid
+		# 5. Instantiate the ProjectForm class
+		form = ProjectForm(request.POST, request.FILES, instance=project)
+		
+		# 6. Check if form input is valid
 		if form.is_valid():
-			# Save the input
+			# 7. Save the input
 			form.save()
+			# 8. Redirect the user to projects
 			return redirect('projects:projects')
+
+	# # Get the project instance by its id
+	# project = Project.objects.get(id=pk)
+
+	# # Instantiate the ProjectForm class
+	# # with parameter the instance of the project
+	# form = ProjectForm(instance=project)
+
+	# # If there is POST request, process the form
+	# if request.method == "POST":
+
+	# 	# Tesing the form: fillin the form and submit it
+	# 	# print(request.POST) # tested :)
+
+	# 	# Instantiate the ProjectForm class
+	# 	form = ProjectForm(request.POST, instance=project)
+	# 	# Check if form input is valid
+	# 	if form.is_valid():
+	# 		# Save the input
+	# 		form.save()
+	# 		return redirect('projects:projects')
 
 	# Context dictionary
 	context = {
