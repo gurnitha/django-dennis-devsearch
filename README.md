@@ -1448,7 +1448,11 @@ This is my exercise based on tutorials by Dennis on Udemy
         modified:   users/templates/users/profile_form.html
 
 
+#### 21.16 STYLING THE profile_form page Part 2
 
+        modified:   README.md
+        modified:   users/forms.py
+        modified:   users/templates/users/profile_form.html
 
 
 
