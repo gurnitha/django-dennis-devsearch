@@ -1466,9 +1466,13 @@ This is my exercise based on tutorials by Dennis on Udemy
         modified:   users/templates/users/account.html
 
 
+#### 22.2 CRUD - CREATE : Add logic to createProject method for a specific user to create project
 
-
-
+        modified:   README.md
+        modified:   projects/forms.py
+        modified:   projects/views.py
+        new file:   static/images/logo-jet.JPG
+        new file:   static/images/logo_conblock.PNG
 
 
 
