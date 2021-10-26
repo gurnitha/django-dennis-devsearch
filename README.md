@@ -1537,8 +1537,11 @@ This is my exercise based on tutorials by Dennis on Udemy
         modified:   users/templates/users/skill_form.html
 
 
+#### 23.5 CRUD-Create Part 5: Add logic to createSkill method to process the skill_form
 
-
+        modified:   README.md
+        modified:   users/templates/users/skill_form.html
+        modified:   users/views.py
 
 
 

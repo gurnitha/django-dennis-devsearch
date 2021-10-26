@@ -207,11 +207,24 @@ def editAccount(request):
 # ---------------------------CRUD SKILL-----------------------
 
 # createSkill view
+@login_required(login_url='users:login')
 def createSkill(request):
+
+	profile = request.user.profile
 	form = SkillForm()
+	
+	if request.method == 'POST':
+		form = SkillForm(request.POST)
+		if form.is_valid():
+			skill = form.save(commit=False)
+			skill.owner = profile
+			skill.save()
+			return redirect('users:account')
+
 	context = {
 		'form':form
 	}
+	
 	return render(request, 'users/skill_form.html', context)
 
 
