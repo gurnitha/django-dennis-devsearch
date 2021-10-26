@@ -228,4 +228,26 @@ def createSkill(request):
 	return render(request, 'users/skill_form.html', context)
 
 
+
+# updateSkill view
+@login_required(login_url='users:login')
+def updateSkill(request, pk):
+
+	profile = request.user.profile
+	skill = profile.skill_set.get(id=pk)
+	form = SkillForm(instance=skill)
+	
+	if request.method == 'POST':
+		form = SkillForm(request.POST, instance=skill)
+		if form.is_valid():
+			skill.save()
+			return redirect('users:account')
+
+	context = {
+		'form':form
+	}
+	
+	return render(request, 'users/skill_form.html', context)
+
+
 # ------------------------END CRUD SKILL----------------------

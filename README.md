@@ -1551,8 +1551,12 @@ This is my exercise based on tutorials by Dennis on Udemy
         :)
 
 
+#### 23.7 CRUD-UPDATE: create updateSkill method and test it out
 
-
+        modified:   README.md
+        modified:   users/templates/users/account.html
+        modified:   users/urls.py
+        modified:   users/views.py
 
 
 
