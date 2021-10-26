@@ -1566,4 +1566,15 @@ This is my exercise based on tutorials by Dennis on Udemy
         modified:   users/views.py
 
 
+#### 23.9 CRUD-DELETE: create deleteSkill method and test it out
+
+        modified:   README.md
+        new file:   templates/delete_template.html
+        modified:   users/templates/users/account.html
+        modified:   users/urls.py
+        modified:   users/views.py
+
+        NOTE:
+
+        Tested :)
 

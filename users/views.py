@@ -253,4 +253,23 @@ def updateSkill(request, pk):
 	return render(request, 'users/skill_form.html', context)
 
 
+
+# deleteSkill view
+@login_required(login_url='users:login')
+def deleteSkill(request, pk):
+
+	profile = request.user.profile
+	skill = profile.skill_set.get(id=pk)
+
+	if request.method == 'POST':
+		skill.delete()
+		return redirect('users:account')
+
+	context = {'object':skill}
+
+	return render(request, 'delete_template.html', context)
+
+
+
+
 # ------------------------END CRUD SKILL----------------------
