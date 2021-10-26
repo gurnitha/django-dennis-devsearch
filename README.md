@@ -1487,8 +1487,20 @@ This is my exercise based on tutorials by Dennis on Udemy
         modified:   projects/views.py
 
 
+#### 22.5 Testing - The CRUD :)
 
+        modified:   README.md
+        new file:   static/images/IG_DB_DIAGRAM.PNG
+        new file:   static/images/logo-i_saw_the_dog.PNG
+        new file:   static/images/profiles/bima.PNG
+        new file:   static/images/profiles/bima_YeycPq0.PNG
+        new file:   static/images/profiles/bima_eZL8aJ4.PNG
+        new file:   static/images/profiles/ing_FtH9pMH.jfif
 
+        NOTE:
+
+        1. user: bima -> username: warkudara
+        2. user: ing  -> username: ing-nyoman
 
 
 
