@@ -1422,9 +1422,10 @@ This is my exercise based on tutorials by Dennis on Udemy
         modified:   users/templates/users/profile_form.html
 
 
+#### 21.12 Add logic to editAccount view to processing the form
 
-
-
+        modified:   README.md
+        modified:   users/views.py
 
 
 

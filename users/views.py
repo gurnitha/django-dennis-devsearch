@@ -178,6 +178,27 @@ def userAccount(request):
 # editAccount view
 @login_required(login_url='login')
 def editAccount(request):
-	form = ProfileForm
+
+	# Get the profile from user
+	profile = request.user.profile	
+
+	# Get the attributes from the Profile model
+	form = ProfileForm(instance=profile)	
+
+	# If request mothod is POST, process the form
+	if request.method == 'POST':
+		form = ProfileForm(
+					request.POST,
+					request.FILES,
+					instance=profile)
+
+		# Use is_valid method to check if the form is valid,
+		# if the form valid, then save it
+		if form.is_valid():
+			form.save()
+
+		# Redirect to its account after saving
+		return redirect('users:account')
+
 	context = {'form':form}
 	return render(request, 'users/profile_form.html', context)
