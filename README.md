@@ -1389,6 +1389,11 @@ This is my exercise based on tutorials by Dennis on Udemy
         modified:   users/templates/users/account.html
 
 
+#### 21.7 Add basic form to editAccout (profile_form) page
+
+        modified:   README.md
+        modified:   users/templates/users/profile_form.html
+
 
 
 

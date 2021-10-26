@@ -8,4 +8,15 @@
 
 	<h1>Edit Account</h1>
 
+	<form 
+		action="{% url 'users:edit-account' %}" 
+		method="POST">
+		{% csrf_token %}
+
+		<input 
+			type="submit" 
+			name="" 
+			value="Submit">
+	</form>
+
 	{% endblock content %}
