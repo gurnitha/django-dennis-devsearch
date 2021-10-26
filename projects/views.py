@@ -157,10 +157,29 @@ def updateProject(request, pk):
 
 @login_required(login_url="users:login")
 def deleteProject(request, pk):
-	project = Project.objects.get(id=pk)
+
+	# 1. To create project, user MUST logged in first.
+	#    Then get profile of the logged in user
+	#    it represents OneToOne relstionship
+	profile = request.user.profile
+
+	# 2. Get the project's instance by its id
+	#    that belongs to the logged in user
+	#    or get all the projects of that user
+	project = profile.project_set.get(id=pk)
+
+	# 4. If there is POST request, process the form,
+	#    delete the project, and 
+	#    redirect user to projects page
 	if request.method == "POST":
 		project.delete()
 		return redirect('projects:projects')
+
+	# project = Project.objects.get(id=pk)
+	# if request.method == "POST":
+	# 	project.delete()
+	# 	return redirect('projects:projects')
+	
 	context = {'object':project}
 	return render(request, 'projects/delete_template.html', context)
 

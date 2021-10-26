@@ -1481,10 +1481,10 @@ This is my exercise based on tutorials by Dennis on Udemy
         modified:   projects/views.py
 
 
+#### 22.4 CRUD - DELETE :  Add logic to deleteProject method for a specific user to delete a project
 
-
-
-
+        modified:   README.md
+        modified:   projects/views.py
 
 
 
