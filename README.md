@@ -1373,4 +1373,82 @@ This is my exercise based on tutorials by Dennis on Udemy
         1. Logged in to access account page
         2. Logged in user can create project, but
            MUST manually add the owner of the project in admin by superuser
-           
+
+
+#### 21.5 Create editAccount page VTUrls
+
+        modified:   README.md
+        new file:   users/templates/users/profile_form.html
+        modified:   users/urls.py
+        modified:   users/views.py
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

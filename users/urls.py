@@ -13,6 +13,7 @@ urlpatterns = [
 
     # Account
     path('account/', views.userAccount, name='account'),
+    path('edit-account/', views.editAccount, name='edit-account'),
 
     # Authentication
     path('login/', views.loginUser, name='login'),
