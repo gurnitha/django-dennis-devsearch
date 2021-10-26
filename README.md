@@ -1544,6 +1544,11 @@ This is my exercise based on tutorials by Dennis on Udemy
         modified:   users/views.py
 
 
+#### 23.6 CRUD-Create Part 6: Testing create skill
+
+        NOTE:
+
+        :)
 
 
 
