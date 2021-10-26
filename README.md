@@ -1416,6 +1416,10 @@ This is my exercise based on tutorials by Dennis on Udemy
         modified:   users/forms.py
 
 
+#### 21.11 Update the profile_form to be able to update image
+
+        modified:   README.md
+        modified:   users/templates/users/profile_form.html
 
 
 
