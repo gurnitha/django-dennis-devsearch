@@ -219,6 +219,7 @@ def createSkill(request):
 			skill = form.save(commit=False)
 			skill.owner = profile
 			skill.save()
+			messages.success(request, 'Skill was added successfully.')
 			return redirect('users:account')
 
 	context = {
@@ -243,6 +244,7 @@ def updateSkill(request, pk):
 		form = SkillForm(request.POST, instance=skill)
 		if form.is_valid():
 			skill.save()
+			messages.success(request, 'Skill was updated successfully.')
 			return redirect('users:account')
 
 	context = {
@@ -263,6 +265,7 @@ def deleteSkill(request, pk):
 
 	if request.method == 'POST':
 		skill.delete()
+		messages.success(request, 'Skill was deleted successfully.')
 		return redirect('users:account')
 
 	context = {'object':skill}

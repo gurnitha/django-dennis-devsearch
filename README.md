@@ -1578,3 +1578,13 @@ This is my exercise based on tutorials by Dennis on Udemy
 
         Tested :)
 
+
+### 24. FLASH MESSAGES
+### -----------------------------------------------------
+
+
+#### 24.1 Add flash message to createSkill, updateSkill and deleteSkill
+
+        modified:   README.md
+        modified:   templates/delete_template.html
+        modified:   users/views.py
