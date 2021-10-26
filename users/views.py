@@ -202,3 +202,14 @@ def editAccount(request):
 
 	context = {'form':form}
 	return render(request, 'users/profile_form.html', context)
+
+
+# ---------------------------CRUD SKILL-----------------------
+
+# createSkill view
+def createSkill(request):
+	context = {}
+	return render(request, 'users/skill_form.html', context)
+
+
+# ------------------------END CRUD SKILL----------------------

@@ -1504,7 +1504,18 @@ This is my exercise based on tutorials by Dennis on Udemy
 
 
 
+### 23. CRUD USER-BASED SKILL
+### -----------------------------------------------------
 
+
+#### 23.1 CRUD-Create Part 1: Create skill_form VTUrls
+
+        modified:   README.md
+        new file:   static/images/profiles/bisma_wgPZt41.PNG
+        modified:   users/templates/users/account.html
+        new file:   users/templates/users/skill_form.html
+        modified:   users/urls.py
+        modified:   users/views.py
 
 
 

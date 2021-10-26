@@ -1,0 +1,16 @@
+<!-- users/templates/users/skill_form.html -->
+{% extends 'main.html' %}
+{% load static %}
+
+{% block title %}Skill form{% endblock title %}
+
+	{% block content %}
+	
+	<h1>Create Skill</h1>
+
+	<form action="" method="POST">
+		{% csrf_token %}
+		<input type="submit" name="" value="Submit">
+	</form>
+
+	{% endblock content %}
