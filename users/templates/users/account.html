@@ -15,11 +15,25 @@
                         <div class="card__body dev">
 
                         	<!-- Aside profile -->
-                            <a class="tag tag--pill tag--main settings__btn" href="{% url 'users:edit-account' %}"><i class="im im-edit"></i> Edit</a>
-                            <img class="avatar avatar--xl dev__avatar" src="{{profile.profile_image.url}}" />
-                            <h2 class="dev__name">{{profile.name|title}}</h2>
-                            <p class="dev__title">{{profile.short_info}}</p>
-                            <p class="dev__location">Based in {{profile.location}}</p>
+                            <a 
+                                class="tag tag--pill tag--main settings__btn" 
+                                href="{% url 'users:edit-account' %}">
+                                <i class="im im-edit"></i> 
+                                Edit
+                            </a>
+                            <img 
+                                class="avatar avatar--xl dev__avatar" 
+                                src="{{profile.profile_image.url}}" />
+                            
+                            <h2 class="dev__name">
+                                {{profile.name|title}}
+                            </h2>
+                            <p class="dev__title">
+                                {{profile.short_info}}
+                            </p>
+                            <p class="dev__location">
+                                Based in {{profile.location}}
+                            </p>
                             <!-- END Aside profile -->
 
                             <!-- Social media -->
@@ -27,31 +41,55 @@
 								<!-- Github -->
 								{% if profile.social_github %}
 									<li>
-									<a title="Github" href="{{profile.social_github}}" target="_blank"><i class="im im-github"></i></a>
+									   <a 
+                                           title="Github" href="{{profile.social_github}}" 
+                                           target="_blank">
+                                           <i class="im im-github"></i>
+                                       </a>
 									</li>
 								{% endif %}
 								<!-- Stackoverflow -->
 								{% if profile.social_stackoverflow %}
 									<li>
-									<a title="Stackoverflow" href="{{profile.social_stackoverflow}}" target="_blank"><i class="im im-stackoverflow"></i></a>
+									   <a 
+                                            title="Stackoverflow" 
+                                            href="{{profile.social_stackoverflow}}" 
+                                            target="_blank">
+                                            <i class="im im-stackoverflow"></i>
+                                        </a>
 									</li>
 								{% endif %}
 								<!-- Twitter -->
 								{% if profile.social_twitter %}
 									<li>
-									<a title="Twitter" href="{{profile.social_stackoverflow}}" target="_blank"><i class="im im-twitter"></i></a>
+									   <a 
+                                            title="Twitter" 
+                                            href="{{profile.social_stackoverflow}}" 
+                                            target="_blank">
+                                            <i class="im im-twitter"></i>
+                                        </a>
 									</li>
 								{% endif %}
 								{% if profile.social_linkedin %}
 								<!-- LinkedIn -->
 									<li>
-									<a title="LinkedIn" href="{{profile.social_linkedin}}" target="_blank"><i class="im im-linkedin"></i></a>
+									   <a 
+                                            title="LinkedIn" 
+                                            href="{{profile.social_linkedin}}" 
+                                            target="_blank">
+                                            <i class="im im-linkedin"></i>
+                                        </a>
 									</li>
 								{% endif %}
 								{% if profile.social_website %}
 								<!-- Personal website -->
 									<li>
-									<a title="Personal Website" href="{{profile.social_website}}" target="_blank"><i class="im im-globe"></i></a>
+									   <a 
+                                            title="Personal Website" 
+                                            href="{{profile.social_website}}" 
+                                            target="_blank">
+                                            <i class="im im-globe"></i>
+                                        </a>
 									</li>
 								{% endif %}
 							</ul>
@@ -75,7 +113,12 @@
                     <!-- Skill -->
                     <div class="settings">
                         <h3 class="settings__title">Skills</h3>
-                        <a class="tag tag--pill tag--sub settings__btn tag--lg" href="#"><i class="im im-plus"></i> Add Skill</a>
+                        <a 
+                            class="tag tag--pill tag--sub settings__btn tag--lg" 
+                            href="#">
+                            <i class="im im-plus"></i> 
+                            Add Skill
+                        </a>
                     </div>
                     <table class="settings__table">
 
@@ -90,9 +133,18 @@
                                 {% endif %}
                             </td>
                             <td class="settings__tableActions">
-                                <a class="tag tag--pill tag--main settings__btn" href="#"><i class="im im-edit"></i> Edit</a>
-                                <a class="tag tag--pill tag--main settings__btn" href="#"><i class="im im-x-mark-circle-o"></i>
-                                Delete</a>
+                                <a 
+                                    class="tag tag--pill tag--main settings__btn" 
+                                    href="">
+                                    <i class="im im-edit"></i> 
+                                    Edit
+                                </a>
+                                <a 
+                                    class="tag tag--pill tag--main settings__btn" 
+                                    href="#">
+                                    <i class="im im-x-mark-circle-o"></i>
+                                    Delete
+                                </a>
                             </td>
                         </tr>
                         {% endfor %}
@@ -115,16 +167,31 @@
                     	{% for project in projects %}
                         <tr>
                             <td class="settings__thumbnail">
-                                <a href="{% url 'projects:project' project.id %}"><img src="{{project.featured_image.url}}" alt="Project Thumbnail" /></a>
+                                <a 
+                                    href="{% url 'projects:project' project.id %}">
+                                    <img src="{{project.featured_image.url}}" 
+                                    alt="Project Thumbnail" /></a>
                             </td>
                             <td class="settings__tableInfo">
-                                <a href="{% url 'projects:project' project.id %}">{{project.title}}</a>
+                                <a 
+                                    href="{% url 'projects:project' project.id %}">
+                                    {{project.title}}
+                                </a>
                                 <p>{{project.description}}</p>
                             </td>
                             <td class="settings__tableActions">
-                                <a class="tag tag--pill tag--main settings__btn" href="#"><i class="im im-edit"></i> Edit</a>
-                                <a class="tag tag--pill tag--main settings__btn" href="#"><i class="im im-x-mark-circle-o"></i>
-                                Delete</a>
+                                <a 
+                                    class="tag tag--pill tag--main settings__btn" 
+                                    href="{% url 'projects:update-project' project.id %}">
+                                    <i class="im im-edit"></i> 
+                                    Edit
+                                </a>
+                                <a 
+                                    class="tag tag--pill tag--main settings__btn" 
+                                    href="{% url 'projects:delete-project' project.id %}">
+                                    <i class="im im-x-mark-circle-o"></i>
+                                    Delete
+                                </a>
                             </td>
                         </tr>
                         {% endfor %}

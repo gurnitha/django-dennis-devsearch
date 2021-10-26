@@ -1456,6 +1456,15 @@ This is my exercise based on tutorials by Dennis on Udemy
 
 
 
+### 22. CRUD USER-BASED PROJECT
+### -----------------------------------------------------
+
+
+#### 22.1 Add links to account page
+
+        modified:   README.md
+        modified:   users/templates/users/account.html
+
 
 
 
