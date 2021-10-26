@@ -12,7 +12,7 @@ from django.contrib.auth.decorators import login_required
 # Locals
 from . models import Profile, Skill 
 from projects.models import Tag
-from . forms import CustomUserCreationForm
+from . forms import CustomUserCreationForm, ProfileForm
 
 # Create your views here.
 
@@ -178,5 +178,6 @@ def userAccount(request):
 # editAccount view
 @login_required(login_url='login')
 def editAccount(request):
-	context = {}
+	form = ProfileForm
+	context = {'form':form}
 	return render(request, 'users/profile_form.html', context)

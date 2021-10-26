@@ -1396,6 +1396,12 @@ This is my exercise based on tutorials by Dennis on Udemy
 
 
 
+#### 21.8 Add form fields to editAccunt page by using the Profile model attributes
+
+        modified:   README.md
+        modified:   users/forms.py
+        modified:   users/templates/users/profile_form.html
+        modified:   users/views.py
 
 
 
