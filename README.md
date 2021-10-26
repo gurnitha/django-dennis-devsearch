@@ -1428,6 +1428,12 @@ This is my exercise based on tutorials by Dennis on Udemy
         modified:   users/views.py
 
 
+#### 21.13 EXTRA ORDINARY - Fixing the Reverse for 'user-profile' with arguments not found
+
+        modified:   README.md
+        modified:   projects/templates/projects/projects.html
+
+        
 
 
 
