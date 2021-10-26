@@ -1531,6 +1531,11 @@ This is my exercise based on tutorials by Dennis on Udemy
         modified:   users/views.py
 
 
+#### 23.4 CRUD-Create Part 4: Styling the skill_form
+
+        modified:   README.md
+        modified:   users/templates/users/skill_form.html
+
 
 
 
