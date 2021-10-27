@@ -1588,3 +1588,27 @@ This is my exercise based on tutorials by Dennis on Udemy
         modified:   README.md
         modified:   templates/delete_template.html
         modified:   users/views.py
+
+
+### 25. SEARCH
+### -----------------------------------------------------
+
+
+#### 25.1. SEARCH - Scenario and Preparation
+
+        NOTE:
+
+        In the home page or the profiles page, we are going to search developers by certain attributes like:
+        - the name or 
+        - description 
+        - and also by developer skills.
+
+        And then in the projects page, we want to search projects by: 
+        - title, 
+        - also by the description attributes like the 
+          - tags associated with it and even the developers.
+          
+        modified:   README.md
+        modified:   users/templates/users/profiles.html
+
+
