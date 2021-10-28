@@ -1616,3 +1616,9 @@ This is my exercise based on tutorials by Dennis on Udemy
 
         modified:   README.md
         modified:   users/views.py
+
+
+#### 25.3. SEARCH - Search by name
+
+        modified:   README.md
+        modified:   users/views.py

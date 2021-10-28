@@ -136,10 +136,16 @@ def profiles(request):
 	if request.GET.get('search_query'):
 		search_query = request.GET.get('search_query')
 
-	# T# Step 2 Search: Testing search resutl
-	print('SEARCH:', search_query)
+	# # Step 2 Search: Testing search resutl
+	# print('SEARCH:', search_query)
 
-	profiles = Profile.objects.all()
+	# Step 3 Search: search by name
+	profiles = Profile.objects.filter(
+		name__icontains=search_query
+	)
+	
+	# profiles = Profile.objects.all()
+
 	skills = Skill.objects.all()
 	context = {
 		'profiles':profiles,
