@@ -1607,8 +1607,12 @@ This is my exercise based on tutorials by Dennis on Udemy
         - title, 
         - also by the description attributes like the 
           - tags associated with it and even the developers.
-          
+
         modified:   README.md
         modified:   users/templates/users/profiles.html
 
 
+#### 25.2. SEARCH - Testing the search result to terminal
+
+        modified:   README.md
+        modified:   users/views.py

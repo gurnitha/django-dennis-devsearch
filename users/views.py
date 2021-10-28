@@ -128,6 +128,17 @@ def registerUser(request):
 
 # Profiles view
 def profiles(request):
+
+	# Step 1 Search: search_query with empty string
+	search_query = ''
+
+	# Step 2 Search: If there is get request
+	if request.GET.get('search_query'):
+		search_query = request.GET.get('search_query')
+
+	# T# Step 2 Search: Testing search resutl
+	print('SEARCH:', search_query)
+
 	profiles = Profile.objects.all()
 	skills = Skill.objects.all()
 	context = {
