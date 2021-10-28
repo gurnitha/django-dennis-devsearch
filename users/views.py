@@ -6,6 +6,7 @@ from django.contrib.auth import login, authenticate, logout
 from django.contrib.auth.models import User
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
+from django.db.models import Q  
 
 # from django.contrib.auth.forms import UserCreationForm
 
@@ -139,9 +140,15 @@ def profiles(request):
 	# # Step 2 Search: Testing search resutl
 	# print('SEARCH:', search_query)
 
-	# Step 3 Search: search by name
+	# # Step 3 Search: search by name
+	# profiles = Profile.objects.filter(
+	# 	name__icontains=search_query
+	# )
+	
+	# Step 4 Search: using Q look up
 	profiles = Profile.objects.filter(
-		name__icontains=search_query
+		Q(name__icontains=search_query) |
+		Q(short_intro__icontains=search_query),
 	)
 	
 	# profiles = Profile.objects.all()

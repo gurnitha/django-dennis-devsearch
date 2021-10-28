@@ -1631,9 +1631,27 @@ This is my exercise based on tutorials by Dennis on Udemy
         modified:   users/views.py
 
 
+#### 25.5. SEARCH - Using Q look up for search 
 
+        NOTE:
 
+        The problem using search by name_icontains was that
+        we can not search by name and by short_intro. 
 
+        Example: 
+
+        Ref: the Profile model
+
+        name: dennis
+        short_intro: problem using javascript
+
+        If name and short_intro did not have the same characters (n), then the result will be empty.
+
+        Q look up search will solve the problem.
+
+        modified:   README.md
+        modified:   users/views.py
+        
 
 
 
