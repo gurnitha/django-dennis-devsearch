@@ -1671,6 +1671,24 @@ This is my exercise based on tutorials by Dennis on Udemy
         modified:   README.md
 
 
+### 26. SEARCH FOR PROJECTS
+### -----------------------------------------------------
+
+
+#### 26.1. SEARCH FOR PROJECTS - Create utils file and searchProject method to search by project's name, description, owner and tags
+
+        modified:   README.md
+        modified:   projects/templates/projects/projects.html
+        new file:   projects/utils.py
+        modified:   projects/views.py
+
+        NOTE:
+
+        1. Similar to SEARCH FOR PROFILES
+        2. The different is that Profile and Skill have OneToMeny Rel
+           but the Project and Tag have ManyToMan Rel.
+
+           
 
 
 
