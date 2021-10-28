@@ -3,7 +3,7 @@
 # Django modules
 from django.shortcuts import render, redirect
 from django.contrib.auth.decorators import login_required
-from django.core.paginator import Paginator
+from django.core.paginator import Paginator, PageNotAnInteger, EmptyPage
 
 # locals
 from .models import Project
@@ -18,15 +18,33 @@ def projects(request):
 	projects, search_query = searchProjects(request)
 
 	# Pagination
+
 	# Step 1: Get the 1st page of the result
-	page = 1
+	# page = 1
+	page = request.GET.get('page')
+
 	# Step 2: Set N=3 results per page
 	restults = 3  
+
 	# Step 3: Use the pagination class with parameter
 	#         of Queryset(projects) and the results
 	paginator = Paginator(projects, restults)
-	# Steps 4: Get the first page that contain 3 projects
-	projects = paginator.page(page)
+
+	# Steps 4: If things are ok, get the first page that contain 3 projects
+	try:
+		projects = paginator.page(page)
+
+	# Steps 5: If user visited the page for the 1st time,
+	#          give him the first page
+	except PageNotAnInteger:
+		page = 1
+		projects = paginator.page(page)
+
+	# Step 6: If no more pages found,
+	#         give him the last page
+	except EmptyPage:
+		page = paginator.num_pages
+		projects = paginator.page(page)
 
 	# projects = Project.objects.all()
 	page_title = 'Projects'
@@ -35,6 +53,7 @@ def projects(request):
 		'projects':projects,
 		# 'tags':tags,
 		'search_query':search_query,
+		'paginator':paginator
 	}
 	return render(request, 'projects/projects.html', context)
 

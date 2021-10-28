@@ -1699,10 +1699,24 @@ This is my exercise based on tutorials by Dennis on Udemy
         modified:   projects/views.py
 
 
+#### 27.2 PAGINATION Part 2 - Add more logic to the projects view
+
+        modified:   README.md
+        modified:   projects/views.py
+
+        NOTE:
+
+        1. If things are ok, show the first page
+        2. If user first visit to the page,
+           give him the first page
+        3. But if no more pages, give him the last page
 
 
+#### 27.3 PAGINATION Part 3 - Showing the pagination 
 
-
+        modified:   README.md
+        modified:   projects/templates/projects/projects.html
+        modified:   projects/views.py
 
 
 
