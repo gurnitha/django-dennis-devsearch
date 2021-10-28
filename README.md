@@ -1659,6 +1659,15 @@ This is my exercise based on tutorials by Dennis on Udemy
         modified:   users/views.py
 
 
+#### 25.7. SEARCH - Codes separattions: create utils file and searchProfiles method
+
+        modified:   README.md
+        new file:   users/utils.py
+        modified:   users/views.py
+
+
+
+
 
 
 

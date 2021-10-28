@@ -6,14 +6,19 @@ from django.contrib.auth import login, authenticate, logout
 from django.contrib.auth.models import User
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
-from django.db.models import Q  
+# from django.db.models import Q  
 
 # from django.contrib.auth.forms import UserCreationForm
 
 # Locals
-from . models import Profile, Skill 
+from . models import (
+	Profile, 
+	# Skill,
+	)
+
 from projects.models import Tag
 from . forms import CustomUserCreationForm, ProfileForm, SkillForm
+from .utils import searchProfiles
 
 # Create your views here.
 
@@ -130,37 +135,13 @@ def registerUser(request):
 # Profiles view
 def profiles(request):
 
-	# Step 1 Search: search_query with empty string
-	search_query = ''
+	# Step 5 Search: use the searchProfiles method
+	profiles, search_query = searchProfiles(request)
 
-	# Step 2 Search: If there is get request
-	if request.GET.get('search_query'):
-		search_query = request.GET.get('search_query')
-
-	# # Step 2 Search: Testing search resutl
-	# print('SEARCH:', search_query)
-
-	# # Step 3 Search: search by name
-	# profiles = Profile.objects.filter(
-	# 	name__icontains=search_query
-	# )
-
-	# Step 5 Search: using iexact to search for skills
-	skills = Skill.objects.filter(name__icontains=search_query)
-	
-	# Step 4 Search: using Q look up
-	profiles = Profile.objects.distinct().filter(
-		Q(name__icontains=search_query) |
-		Q(short_intro__icontains=search_query)|
-		Q(skill__in=skills)
-	)
-	
-	# profiles = Profile.objects.all()
-
-	skills = Skill.objects.all()
+	# skills = Skill.objects.all()
 	context = {
 		'profiles':profiles,
-		'skills': skills,
+		# 'skills': skills,
 		'search_query':search_query
 	}
 	return render(request, 'users/profiles.html', context)
