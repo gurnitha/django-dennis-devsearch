@@ -1590,11 +1590,11 @@ This is my exercise based on tutorials by Dennis on Udemy
         modified:   users/views.py
 
 
-### 25. SEARCH
+### 25. SEARCH FOR PROFILES
 ### -----------------------------------------------------
 
 
-#### 25.1. SEARCH - Scenario and Preparation
+#### 25.1. SEARCH FOR PROFILES - Scenario and Preparation
 
         NOTE:
 
@@ -1612,26 +1612,26 @@ This is my exercise based on tutorials by Dennis on Udemy
         modified:   users/templates/users/profiles.html
 
 
-#### 25.2. SEARCH - Testing the search result to terminal
+#### 25.2. SEARCH FOR PROFILES - Testing the search result to terminal
 
         modified:   README.md
         modified:   users/views.py
 
 
-#### 25.3. SEARCH - Search by name
+#### 25.3. SEARCH FOR PROFILES - Search by name
 
         modified:   README.md
         modified:   users/views.py
 
 
-#### 25.4. SEARCH - Keeping the search value remains in the box search
+#### 25.4. SEARCH FOR PROFILES - Keeping the search value remains in the box search
 
         modified:   README.md
         modified:   users/templates/users/profiles.html
         modified:   users/views.py
 
 
-#### 25.5. SEARCH - Using Q look up for search 
+#### 25.5. SEARCH FOR PROFILES - Using Q look up for search 
 
         NOTE:
 
@@ -1653,20 +1653,22 @@ This is my exercise based on tutorials by Dennis on Udemy
         modified:   users/views.py
 
 
-#### 25.6. SEARCH - Using distinct and icontains for multiple search and search for skill as well
+#### 25.6. SEARCH FOR PROFILES - Using distinct and icontains for multiple search and search for skill as well
 
         modified:   README.md
         modified:   users/views.py
 
 
-#### 25.7. SEARCH - Codes separattions: create utils file and searchProfiles method
+#### 25.7. SEARCH FOR PROFILES - Codes separattions: create utils file and searchProfiles method
 
         modified:   README.md
         new file:   users/utils.py
         modified:   users/views.py
 
 
+#### 25.8. SEARCH FOR PROFILES - House keeping: modified README file
 
+        modified:   README.md
 
 
 
