@@ -1688,8 +1688,15 @@ This is my exercise based on tutorials by Dennis on Udemy
         2. The different is that Profile and Skill have OneToMeny Rel
            but the Project and Tag have ManyToMan Rel.
 
-           
 
+### 27. PAGINATION PROJECTS
+### -----------------------------------------------------
+
+         
+#### 27.1 PAGINATION Part 1 - Get first page with 3 projects
+
+        modified:   README.md
+        modified:   projects/views.py
 
 
 

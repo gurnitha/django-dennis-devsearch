@@ -3,6 +3,7 @@
 # Django modules
 from django.shortcuts import render, redirect
 from django.contrib.auth.decorators import login_required
+from django.core.paginator import Paginator
 
 # locals
 from .models import Project
@@ -15,6 +16,17 @@ def projects(request):
 
 	# Step 5 Search: use the searchProfiles method
 	projects, search_query = searchProjects(request)
+
+	# Pagination
+	# Step 1: Get the 1st page of the result
+	page = 1
+	# Step 2: Set N=3 results per page
+	restults = 3  
+	# Step 3: Use the pagination class with parameter
+	#         of Queryset(projects) and the results
+	paginator = Paginator(projects, restults)
+	# Steps 4: Get the first page that contain 3 projects
+	projects = paginator.page(page)
 
 	# projects = Project.objects.all()
 	page_title = 'Projects'
