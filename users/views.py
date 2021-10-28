@@ -149,7 +149,8 @@ def profiles(request):
 	skills = Skill.objects.all()
 	context = {
 		'profiles':profiles,
-		'skills': skills
+		'skills': skills,
+		'search_query':search_query
 	}
 	return render(request, 'users/profiles.html', context)
 
