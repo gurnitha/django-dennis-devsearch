@@ -1739,8 +1739,17 @@ This is my exercise based on tutorials by Dennis on Udemy
         modified:   projects/views.py
 
 
+#### 27.5 PAGINATION Part 5.1 - Solving the PROBLEM: Hiding the paginator if no page to paginate
+
+        modified:   README.md
+        modified:   projects/templates/projects/projects.html
 
 
+#### 27.6 PAGINATION Part 5.2 - custome_range (1, 1000)
+
+        modified:   README.md
+        modified:   projects/templates/projects/projects.html
+        modified:   projects/views.py
 
 
 

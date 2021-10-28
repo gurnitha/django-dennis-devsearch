@@ -83,6 +83,7 @@
                 </div>
             </section>
 
+            {% if projects.has_other_pages %}
             <!-- Pagination -->
             <div class="pagination">
                 <ul class="container">
@@ -96,7 +97,7 @@
                     {% endif %}
 
                     
-                    {% for page in paginator.page_range %}
+                    {% for page in custom_range %}
                         <!-- >>> p.page_range range(1, N) -->
                         {% if page == projects.number %}
                             <li>
@@ -123,5 +124,6 @@
                 </ul>
             </div>
             <!-- END Pagination -->
+            {% endif %}
         </main>
 	{% endblock content %}

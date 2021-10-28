@@ -24,7 +24,7 @@ def projects(request):
 	page = request.GET.get('page')
 
 	# Step 2: Set N=3 results per page
-	restults = 100
+	restults = 3
 
 	# Step 3: Use the pagination class with parameter
 	#         of Queryset(projects) and the results
@@ -46,6 +46,9 @@ def projects(request):
 		page = paginator.num_pages
 		projects = paginator.page(page)
 
+	# Test custom_rannge
+	custom_range = range(1, 1000)
+
 	# projects = Project.objects.all()
 	page_title = 'Projects'
 	context = {
@@ -53,7 +56,8 @@ def projects(request):
 		'projects':projects,
 		# 'tags':tags,
 		'search_query':search_query,
-		'paginator':paginator
+		'paginator':paginator,
+		'custom_range':custom_range
 	}
 	return render(request, 'projects/projects.html', context)
 
