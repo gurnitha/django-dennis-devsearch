@@ -144,11 +144,15 @@ def profiles(request):
 	# profiles = Profile.objects.filter(
 	# 	name__icontains=search_query
 	# )
+
+	# Step 5 Search: using iexact to search for skills
+	skills = Skill.objects.filter(name__icontains=search_query)
 	
 	# Step 4 Search: using Q look up
-	profiles = Profile.objects.filter(
+	profiles = Profile.objects.distinct().filter(
 		Q(name__icontains=search_query) |
-		Q(short_intro__icontains=search_query),
+		Q(short_intro__icontains=search_query)|
+		Q(skill__in=skills)
 	)
 	
 	# profiles = Profile.objects.all()

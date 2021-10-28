@@ -1651,7 +1651,14 @@ This is my exercise based on tutorials by Dennis on Udemy
 
         modified:   README.md
         modified:   users/views.py
-        
+
+
+#### 25.6. SEARCH - Using distinct and icontains for multiple search and search for skill as well
+
+        modified:   README.md
+        modified:   users/views.py
+
+
 
 
 
