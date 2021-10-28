@@ -24,7 +24,7 @@ def projects(request):
 	page = request.GET.get('page')
 
 	# Step 2: Set N=3 results per page
-	restults = 3  
+	restults = 100
 
 	# Step 3: Use the pagination class with parameter
 	#         of Queryset(projects) and the results

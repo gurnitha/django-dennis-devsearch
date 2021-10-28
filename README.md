@@ -1719,6 +1719,24 @@ This is my exercise based on tutorials by Dennis on Udemy
         modified:   projects/views.py
 
 
+#### 27.4 PAGINATION Part 4 - Showing the PROBLEM
+
+        NOTE:
+
+        It has problem, if the results set to > pages availabel
+
+        REAL Example: 
+
+        The app has 15 projects
+        if results set to >= 15
+
+        RESULT:
+
+        1. It will show projects page with 15 projects within it
+        2. The pagination show only ONE, no Next and No Previous
+
+        modified:   README.md
+        modified:   projects/views.py
 
 
 
