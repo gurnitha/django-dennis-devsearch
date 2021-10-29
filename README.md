@@ -1784,7 +1784,7 @@ This is my exercise based on tutorials by Dennis on Udemy
         modified:   templates/pagination.html
 
 
-### 29 PAGINATION PROFILES
+### 29. PAGINATION PROFILES
 ### -----------------------------------------------------
 
 #### 29.1 Create pagination for profiles using the pagination template (as in 28.3)
@@ -1794,6 +1794,58 @@ This is my exercise based on tutorials by Dennis on Udemy
         modified:   users/templates/users/profiles.html
         modified:   users/utils.py
         modified:   users/views.py
+
+
+### 30. PAGINATION FOR PROJECTS & PROFILES
+### -----------------------------------------------------
+
+
+#### 30.1 Sending 2 data to backend: search_query and pagination at once
+
+        modified:   README.md
+        modified:   projects/templates/projects/projects.html
+        modified:   templates/main.html
+        modified:   templates/pagination.html
+        modified:   users/templates/users/profiles.html
+
+        NOTE:
+
+        1. Pagination works good.
+        2. Search works good.
+
+        Problem at 29.1:
+
+        Example: 
+           
+        1. When search for 'new' in the projects, it results
+           more then 1 page, the end point show like this: 
+           (http://localhost:8000/project/?search_query=new)
+        2. The pagination shows links like this:
+           1 2 3 4 5 Next ❯
+        3. When clicking Next ❯, the end point chenge like this:
+           (http://localhost:8000/project/?page=2)
+
+
+        Problem solved:
+
+        1. When search for 'new' in the projects, it results
+           more then 1 page, the end point show like this: 
+           (http://localhost:8000/project/?search_query=new)
+        2. The pagination shows links like this:
+           1 2 3 4 5 Next ❯
+        3. When clicking Next ❯, the end point chenge like this:
+           http://localhost:8000/project/?search_query=new&page=2
+
+
+        IN SHORT:
+
+        Before: (http://localhost:8000/project/?page=2)
+        After : http://localhost:8000/project/?search_query=new&page=2
+
+        Done :)
+
+
+
 
 
 
