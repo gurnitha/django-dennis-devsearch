@@ -1765,6 +1765,19 @@ This is my exercise based on tutorials by Dennis on Udemy
         modified:   projects/views.py
 
 
+### 28. PAGINATION AS TEMPLATES
+### -----------------------------------------------------
+
+
+#### 28.1 Create pagination template and use include to render it
+
+        modified:   README.md
+        modified:   projects/templates/projects/projects.html
+        deleted:    templates/navbar.html
+        new file:   templates/pagination.html
+
+
+
 
 
 
