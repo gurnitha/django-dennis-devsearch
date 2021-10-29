@@ -1922,8 +1922,15 @@ This is my exercise based on tutorials by Dennis on Udemy
         2. The same user can vote more than one time.
 
 
+#### 31.11 REVIEWS - VOTE: Adding logic/conditional to be able to leave review
 
+        modified:   README.md
+        modified:   projects/models.py
+        modified:   projects/templates/projects/single-project.html
 
+        NOTE:
+
+        Test the result :)
 
 
 

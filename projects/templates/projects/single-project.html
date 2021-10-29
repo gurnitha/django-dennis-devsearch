@@ -66,26 +66,42 @@
                             <!-- END Vote -->
 
                             <!-- Comment form -->
-                            <form 
-                                class="form" 
-                                action="{% url 'projects:project' project.id %}" 
-                                method="POST">
-                                {% csrf_token %}
+                            <!-- 1. Make sure the user have not reviewed yet this project, if he did it, hide the form -->
+                            {% if request.user.profile.id in project.reviewers %}
+                                <p style="color:#F2B06B;">You have submitted your review for this project.</p>
 
-                                {% for field in form %}
-                                <div class="form__field">
-                                    <label 
-                                        for="formInput#textarea">
-                                        {{field.label}}
-                                    </label>
-                                    {{field}}
-                                </div>
-                                {% endfor %}
-                                <input 
-                                    class="btn btn--sub btn--lg" 
-                                    type="submit" 
-                                    value="Comments" />
-                            </form>
+                                <!-- 2. Make sure the logged in user is not the owner of the project -->
+                                {% elif request.user.profile == project.owner %}
+                                <p style="color:#F2B06B;">You can not review your own work.</p>
+
+                                <!-- 3. Make sure, only an authenticated user can make review -->
+                                {% elif request.user.is_authenticated %}
+                                <form 
+                                    class="form" 
+                                    action="{% url 'projects:project' project.id %}" 
+                                    method="POST">
+                                    {% csrf_token %}
+
+                                    {% for field in form %}
+                                    <div class="form__field">
+                                        <label 
+                                            for="formInput#textarea">
+                                            {{field.label}}
+                                        </label>
+                                        {{field}}
+                                    </div>
+                                    {% endfor %}
+                                    <input 
+                                        class="btn btn--sub btn--lg" 
+                                        type="submit" 
+                                        value="Comments" />
+                                </form>
+
+                                <!-- 4. If user is not authenticated, show hime the login form -->
+                                {% else %}
+                                <a href="{% url 'users:login' %}?next={{request.path}}">Please login to leave a review.</a>
+
+                            {% endif %}
                             <!-- END Comment form -->
 
                             <div class="commentList">
