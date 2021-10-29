@@ -56,6 +56,10 @@ class Project(models.Model):
     def __str__(self):
         return self.title
 
+    # Highest vote_ratio, vote_total and title
+    class Meta:
+        ordering = ['-vote_ratio', '-vote_total', 'title'] 
+
     # Vote total and ratio
     @property
     def getVoteCount(self):

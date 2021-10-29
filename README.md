@@ -1911,6 +1911,16 @@ This is my exercise based on tutorials by Dennis on Udemy
         modified:   projects/views.py
 
 
+#### 31.10 REVIEWS - VOTE: Display project with the highest vote_ratio, the highest vote_total, and title at the top
+
+        modified:   projects/models.py
+        modified:   README.md
+
+        NOTE:
+
+        1. Project's owner still can vote for himself.
+        2. The same user can vote more than one time.
+
 
 
 
