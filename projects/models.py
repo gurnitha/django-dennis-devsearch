@@ -63,6 +63,11 @@ class Review(models.Model):
         ('up', 'Up Vote'),
         ('down', 'Down Vote'),
     )
+
+    owner = models.ForeignKey(
+        Profile, 
+        on_delete=models.CASCADE, 
+        null=True)
     project = models.ForeignKey(
         Project, 
         on_delete=models.CASCADE)

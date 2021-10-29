@@ -1845,8 +1845,15 @@ This is my exercise based on tutorials by Dennis on Udemy
         Done :)
 
 
+### 31. REVIEWS
+### -----------------------------------------------------
 
 
+#### 31.1 REVIEWS - MODEL - Add owner field with OneToMany Rel with Profile
+
+        modified:   README.md
+        new file:   projects/migrations/0006_review_owner.py
+        modified:   projects/models.py
 
 
 
