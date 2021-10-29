@@ -46,9 +46,21 @@ def projects(request):
 		page = paginator.num_pages
 		projects = paginator.page(page)
 
-	# Test custom_rannge
-	custom_range = range(1, 1000)
+	# ------------------ Customizing the paginator ------------------ 
+	leftIndex = (int(page) - 4)
 
+	if leftIndex < 1:
+		leftIndex = 1
+
+	rightIndex = (int(page) + 5)
+
+	if rightIndex > paginator.num_pages:
+		rightIndex = paginator.num_pages +1
+
+	# Test custom_rannge
+	custom_range = range(leftIndex, rightIndex)
+
+	# ------------------ Customizing the paginator ------------------ 
 	# projects = Project.objects.all()
 	page_title = 'Projects'
 	context = {

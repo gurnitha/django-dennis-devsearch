@@ -1752,6 +1752,11 @@ This is my exercise based on tutorials by Dennis on Udemy
         modified:   projects/views.py
 
 
+#### 27.7 PAGINATION Part 5.3 - Using rolling window to fix 1000 pages issue
+
+        modified:   README.md
+        modified:   projects/views.py
+
 
 
 
