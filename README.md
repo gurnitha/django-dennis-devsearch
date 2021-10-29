@@ -1758,6 +1758,11 @@ This is my exercise based on tutorials by Dennis on Udemy
         modified:   projects/views.py
 
 
+#### 27.8 PAGINATION Part 5.4 - Create custom paginateProjects for the pagination
+
+        modified:   README.md
+        modified:   projects/utils.py
+        modified:   projects/views.py
 
 
 
