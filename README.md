@@ -1862,9 +1862,15 @@ This is my exercise based on tutorials by Dennis on Udemy
         modified:   projects/models.py
 
 
+#### 31.3 REVIEWS - MODEL - Admin panel - Test the unique_togather by adding some reviews
 
+        modified:   README.md
 
+        NOTE:
 
+        It proved that a user can not live more than one comment.
+
+        
 
 
 
