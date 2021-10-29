@@ -85,6 +85,9 @@ class Review(models.Model):
         primary_key=True, 
         editable=False)
 
+    class Meta:
+        unique_together = [['owner', 'project']]
+        
     def __str__(self):
         return self.value
 

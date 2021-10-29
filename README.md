@@ -1856,8 +1856,10 @@ This is my exercise based on tutorials by Dennis on Udemy
         modified:   projects/models.py
 
 
+#### 31.2 REVIEWS - MODEL - Use unique_togather to making user can only live one review for a project
 
-
+        modified:   README.md
+        modified:   projects/models.py
 
 
 
