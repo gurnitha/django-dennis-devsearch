@@ -1777,6 +1777,11 @@ This is my exercise based on tutorials by Dennis on Udemy
         new file:   templates/pagination.html
 
 
+#### 28.3 Making pagination global using queryset
+
+        modified:   README.md
+        modified:   projects/templates/projects/projects.html
+        modified:   templates/pagination.html
 
 
 
