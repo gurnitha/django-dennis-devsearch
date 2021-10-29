@@ -3,6 +3,7 @@
 # Django modules
 from django.shortcuts import render, redirect
 from django.contrib.auth.decorators import login_required
+from django.contrib import messages
 
 # locals
 from .models import Project
@@ -35,7 +36,16 @@ def project(request, pk):
 
 	form = ReviewForm()
 
-	tags = projectObj.tags.all()
+	if request.method == 'POST':
+		form = ReviewForm(request.POST)
+		review = form.save(commit=False)
+		review.project = projectObj
+		review.owner = request.user.profile
+		review.save()
+		# update project vote count
+		messages.success(request, 'Your review was successfully submitted.')
+
+	# tags = projectObj.tags.all()
 	
 	context = {
 		'project':projectObj,

@@ -1898,6 +1898,11 @@ This is my exercise based on tutorials by Dennis on Udemy
         modified:   projects/views.py
 
 
+#### 31.8 REVIEWS - FORM: Adding logic to project view method and test it out
+
+        modified:   README.md
+        modified:   projects/views.py
+
 
 
 
