@@ -18,7 +18,7 @@ from . models import (
 
 from projects.models import Tag
 from . forms import CustomUserCreationForm, ProfileForm, SkillForm
-from .utils import searchProfiles
+from .utils import searchProfiles, paginateProfiles
 
 # Create your views here.
 
@@ -138,11 +138,15 @@ def profiles(request):
 	# Step 5 Search: use the searchProfiles method
 	profiles, search_query = searchProfiles(request)
 
+	# Use the paginateProjects and set the N results (N=2) 
+	custom_range, profiles = paginateProfiles(request, profiles, 3)
+
 	# skills = Skill.objects.all()
 	context = {
 		'profiles':profiles,
 		# 'skills': skills,
-		'search_query':search_query
+		'search_query':search_query,
+		'custom_range':custom_range
 	}
 	return render(request, 'users/profiles.html', context)
 

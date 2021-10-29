@@ -1784,10 +1784,16 @@ This is my exercise based on tutorials by Dennis on Udemy
         modified:   templates/pagination.html
 
 
+### 29 PAGINATION PROFILES
+### -----------------------------------------------------
 
+#### 29.1 Create pagination for profiles using the pagination template (as in 28.3)
 
-
-
+        modified:   README.md
+        modified:   templates/pagination.html
+        modified:   users/templates/users/profiles.html
+        modified:   users/utils.py
+        modified:   users/views.py
 
 
 

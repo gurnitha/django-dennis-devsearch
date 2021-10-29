@@ -21,8 +21,7 @@
                         <!-- >>> p.page_range range(1, >N) show the N page-->    
                         {% else %}
                             <li>
-                                <a href="?page={{page}}" 
-                                class="btn page-link">{{page}}</a>
+                                <a href="?page={{page}}"class="btn page-link">{{page}}</a>
                             </li>
                         {% endif %}
                     {% endfor %}
@@ -30,7 +29,7 @@
                     <!-- Showing the NEXT page sign -->
                     {% if queryset.has_next %}
                     <li>
-                        <a href="?page={{queryset.next_page_number}}" 
+                        <a href="?page={{queryset.next_page_number}}"
                             class="btn page-link">Next &#10095;</a>
                     </li>
                     {% endif %}
