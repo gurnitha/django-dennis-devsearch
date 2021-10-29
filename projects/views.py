@@ -42,8 +42,12 @@ def project(request, pk):
 		review.project = projectObj
 		review.owner = request.user.profile
 		review.save()
-		# update project vote count
+
+		# vote count
+		projectObj.getVoteCount
+
 		messages.success(request, 'Your review was successfully submitted.')
+		return redirect('projects:project', pk=projectObj.id)
 
 	# tags = projectObj.tags.all()
 	

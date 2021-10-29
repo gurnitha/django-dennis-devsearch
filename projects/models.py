@@ -56,6 +56,20 @@ class Project(models.Model):
     def __str__(self):
         return self.title
 
+    # Vote total and ratio
+    @property
+    def getVoteCount(self):
+        reviews = self.review_set.all()
+        upVotes = reviews.filter(value='up').count()
+        totalVotes = reviews.count()
+
+        # ratio
+        ratio = (upVotes / totalVotes) * 100
+        self.vote_total = totalVotes
+        self.vote_ratio = ratio
+
+        self.save()
+
 
 # MODELS:Project
 class Review(models.Model):

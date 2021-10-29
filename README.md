@@ -1904,6 +1904,13 @@ This is my exercise based on tutorials by Dennis on Udemy
         modified:   projects/views.py
 
 
+#### 31.9 REVIEWS - VOTE: Display adding and calculating the vote 
+
+        modified:   README.md
+        modified:   projects/models.py
+        modified:   projects/views.py
+
+
 
 
 
