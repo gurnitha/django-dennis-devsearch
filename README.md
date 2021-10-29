@@ -1878,6 +1878,11 @@ This is my exercise based on tutorials by Dennis on Udemy
         new file:   static/images/samsung-tv.PNG
 
 
+#### 31.5 REVIEWS - Comments: Loading reviews and reviewers
+
+        modified:   README.md
+        modified:   projects/templates/projects/single-project.html
+
 
 
 
