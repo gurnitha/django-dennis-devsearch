@@ -5,6 +5,8 @@
         <main class="singleProject my-md">
             <div class="container">
                 <div class="layout">
+
+                    <!-- Aside -->
                     <div class="column column--1of3">
                         <h3 class="singleProject__subtitle">Tools & Stacks</h3>
                         <div class="singleProject__toolStack">
@@ -31,29 +33,59 @@
                         
                         {% endif %}
                     </div>
+                    <!-- END Aside -->
+
                     <div class="column column--2of3">
-                        <img class="singleProject__preview" src="{{project.featured_image.url}}" alt="portfolio thumbnail" />
-                        <a href="profile.html" class="singleProject__developer">Md. Shahriar Parvez</a>
+
+                        <!-- The project's image, owner, title, description  -->
+                        <img 
+                            class="singleProject__preview" 
+                            src="{{project.featured_image.url}}" 
+                            alt="portfolio thumbnail" />
+
+                        <a 
+                            href="{% url 'users:user-profile' project.owner.id %}" 
+                            class="singleProject__developer">{{project.owner.name|title}}</a>
+
                         <h2 class="singleProject__title">{{project.title}}</h2>
+
                         <h3 class="singleProject__subtitle">About the Project</h3>
                         <div class="singleProject__info">
                             {{project.description}}
                         </div>
+                        <!-- END The project's image, owner, title, description  -->
+                        
+                        <!-- Feedback -->
                         <div class="comments">
                             <h3 class="singleProject__subtitle">Feedback</h3>
+
+                            <!-- Vote -->
                             <h5 class="project--rating">
                                 {{project.vote_ratio}}% Postitive Feedback ({{project.vote_total}} Vote{{project.vote_total|pluralize:"s"}})
                             </h5>
+                            <!-- END Vote -->
+
+                            <!-- Comment form -->
                             <form class="form" action="#" method="POST">
                                 <!-- Textarea -->
                                 <div class="form__field">
                                     <label for="formInput#textarea">Comments: </label>
-                                    <textarea class="input input--textarea" name="message" id="formInput#textarea"
+                                    <textarea 
+                                        class="input input--textarea" 
+                                        name="message" 
+                                        id="formInput#textarea"
                                         placeholder="Write your comments here..."></textarea>
                                 </div>
-                                <input class="btn btn--sub btn--lg" type="submit" value="Comments" />
+                                <input 
+                                    class="btn btn--sub btn--lg" 
+                                    type="submit" 
+                                    value="Comments" />
                             </form>
+                            <!-- END Comment form -->
+
                             <div class="commentList">
+
+                                <!-- Reviewer -->
                                 <div class="comment">
                                     <a href="profile.html">
                                     <img class="avatar avatar--md"
@@ -68,20 +100,12 @@
                                         </p>
                                     </div>
                                 </div>
-                                <div class="comment">
-                                    <a href="profile.html">
-                                    <img class="avatar avatar--md" src="https://avatars.githubusercontent.com/u/33843378" alt="user" />
-                                    </a>
-                                    <div class="comment__details">
-                                        <a href="profile.html" class="comment__author">Dennis Ivanov</a>
-                                        <p class="comment__info">
-                                            Consectetur adipisicing elit. Reprehenderit alias numquam perferendis mollitia minus minima
-                                            exercitationem possimus ab deserunt qui, ratione, dignissimos ut magni laborum quo.
-                                        </p>
-                                    </div>
-                                </div>
+                                <!-- END Reviewer -->
+
                             </div>
                         </div>
+                        <!-- END Feedback -->
+
                     </div>
                 </div>
             </div>

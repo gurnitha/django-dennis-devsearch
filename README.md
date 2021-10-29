@@ -1870,7 +1870,13 @@ This is my exercise based on tutorials by Dennis on Udemy
 
         It proved that a user can not live more than one comment.
 
-        
+
+#### 31.4 REVIEWS - single_project: load project's owner name and link to its profile page
+
+        modified:   README.md
+        modified:   projects/templates/projects/single-project.html
+        new file:   static/images/samsung-tv.PNG
+
 
 
 
