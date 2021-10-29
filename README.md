@@ -1884,6 +1884,12 @@ This is my exercise based on tutorials by Dennis on Udemy
         modified:   projects/templates/projects/single-project.html
 
 
+#### 31.6 REVIEWS - Comments: Showing comments with body only
+
+        modified:   README.md
+        modified:   projects/templates/projects/single-project.html
+
+
 
 
 

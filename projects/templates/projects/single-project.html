@@ -86,6 +86,7 @@
                             <div class="commentList">
 
                                 {% for review in project.review_set.all %}
+                                {% if review.body %}
                                 <!-- Review and Reviewer -->
                                 <div class="comment">
                                     <a href="{% url 'users:user-profile' review.owner.id %}">
@@ -100,6 +101,7 @@
                                     </div>
                                 </div>
                                 <!-- END Review and Reviewer -->
+                                {% endif %}
                                 {% endfor %}
 
                             </div>
