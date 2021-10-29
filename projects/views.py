@@ -6,7 +6,7 @@ from django.contrib.auth.decorators import login_required
 
 # locals
 from .models import Project
-from .forms import ProjectForm
+from .forms import ProjectForm, ReviewForm
 from .utils import searchProjects, paginateProjects
 
 # Create your views here.
@@ -32,10 +32,15 @@ def projects(request):
 
 def project(request, pk):
 	projectObj = Project.objects.get(id=pk)
+
+	form = ReviewForm()
+
 	tags = projectObj.tags.all()
+	
 	context = {
 		'project':projectObj,
-		'tags':tags,
+		# 'tags':tags,
+		'form':form
 	} 
 
 	return render(request, 'projects/single-project.html', context)

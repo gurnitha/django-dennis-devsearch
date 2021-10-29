@@ -1890,6 +1890,13 @@ This is my exercise based on tutorials by Dennis on Udemy
         modified:   projects/templates/projects/single-project.html
 
 
+#### 31.7 REVIEWS - FORM: Create ReviewForm model 
+
+        modified:   README.md
+        modified:   projects/forms.py
+        modified:   projects/templates/projects/single-project.html
+        modified:   projects/views.py
+
 
 
 
