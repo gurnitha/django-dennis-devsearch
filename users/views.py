@@ -36,7 +36,7 @@ def loginUser(request):
 		# (Optional) Print out the input in the terminal
 		# print(request.POST)
 
-		username = request.POST['username']
+		username = request.POST['username'].lower()
 		password = request.POST['password']
 
 		# 2. Use 'try block' to check if the input data exist 

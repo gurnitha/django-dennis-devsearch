@@ -1945,6 +1945,10 @@ This is my exercise based on tutorials by Dennis on Udemy
         Test the result :)
 
 
+#### 31.13 REVIEWS - VOTE: House keeping - Convering usename value to lowercase
+
+        modified:   README.md
+        modified:   users/views.py
 
 
 
