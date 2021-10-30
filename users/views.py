@@ -61,7 +61,8 @@ def loginUser(request):
 			# This login will create session in the db
 			# and the session will use it in the browser
 			login(request, user)
-			return redirect('users:profiles')
+			# return redirect('users:profiles')
+			return redirect(request.GET['next'] if 'next' in request.GET else 'users:account')
 
 		# 6. If user exist, but its credentials incorrect
 		else:

@@ -1933,8 +1933,16 @@ This is my exercise based on tutorials by Dennis on Udemy
         Test the result :)
 
 
+#### 31.12 REVIEWS - VOTE: Redirect user to a spesific project after logging in
 
+        modified:   README.md
+        modified:   users/templates/users/login_register.html
+        deleted:    users/templates/users/login_register_ori.html
+        modified:   users/views.py
 
+        NOTE:
+
+        Test the result :)
 
 
 

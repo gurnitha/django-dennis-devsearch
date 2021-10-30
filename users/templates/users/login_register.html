@@ -82,7 +82,8 @@
             <!-- Form -->
             <form 
 				method="POST" 
-				action="{% url 'users:login' %}"  
+                {# action="{% url 'users:login' %}" #} 
+                action=""  
             	class="form auth__form">
 
             	{% csrf_token %}
