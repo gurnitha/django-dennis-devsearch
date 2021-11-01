@@ -1986,6 +1986,10 @@ This is my exercise based on tutorials by Dennis on Udemy
         modified:   users/views.py
 
 
+#### 32.4 MESSAGES - Fetching messages to inbox
+
+        modified:   README.md
+        modified:   users/templates/users/inbox.html
 
 
 
