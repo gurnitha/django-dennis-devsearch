@@ -2077,4 +2077,7 @@ This is my exercise based on tutorials by Dennis on Udemy
         modified:   users/views.py
 
 
+#### 33.6 MESSAGES CRUD - Hidding Send Message button to logged in user
 
+        modified:   README.md
+        modified:   users/templates/users/user-profile.html
