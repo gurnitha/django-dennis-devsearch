@@ -5,14 +5,14 @@
 
 {% block title %}Message Form{% endblock title %}
 
-	{% block content %}
+    {% block content %}
 
     <main class="formPage my-xl">
         <div class="content-box">
             <div class="formWrapper">
                 <a class="backButton" 
-                	href="{% url 'users:user-profile' recipient.id %}">
-                	<i class="im im-angle-left"></i></a>
+                    href="{% url 'users:user-profile' recipient.id %}">
+                    <i class="im im-angle-left"></i></a>
                 <br>
 
                 <form class="form" method="POST">
@@ -42,16 +42,16 @@
                         {{form.body}}
                     </div>
 
-	                <input 
-	                	class="btn btn--sub btn--lg my-md" 
-	                	type="submit" 
-	                	name=""
-	                	value="Submit">
-	                <!-- END If user not log in -->
+                    <input 
+                        class="btn btn--sub btn--lg my-md" 
+                        type="submit" 
+                        name=""
+                        value="Submit">
+                    <!-- END If user not log in -->
                 </form>
 
             </div>
         </div>
     </main>
 
-	{% endblock content %}
+    {% endblock content %}

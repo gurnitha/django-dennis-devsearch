@@ -331,16 +331,55 @@ def viewMessage(request, pk):
 
 def createMessage(request, pk):
 
-	# Load MessageForm
+	# Step 1: Get the specific recipient by its id
+    recipient = Profile.objects.get(id=pk)
+	# Step 2: Load MessageForm
     form = MessageForm()
 
-    recipient = Profile.objects.get(id=pk)
+    # Step 3: Use try catcher to check if user logged in or not
+    #         If user is not log in, then user is not login
+    try:
+        sender = request.user.profile
+    except:
+        sender = None
 
+    # Step 4: If there is request, and the request method
+    #         is POST request, then process and
+    #         validate the form
+    if request.method == 'POST':
+        form = MessageForm(request.POST)
+
+        # Step 5: If form is valid, use commit = False
+        #         and attache the sender name and the recipient
+        if form.is_valid():
+            message = form.save(commit=False) # <- do not save for now
+            message.sender = sender
+            message.recipient = recipient
+
+            # Step 6: If sender is logged in
+            #         it means that we have the sender and
+            #         the recipient and there for user
+            #         will not see the email and name field
+            if sender:
+                message.name = sender.name
+                message.email = sender.email
+
+            # Step 7: Save the messate 
+            message.save()
+
+            # Step 8: Show success message
+            messages.success(request, 'Your message was successfully sent!')
+
+            # Step 9: Redirect user to its account
+            return redirect('users:user-profile', pk=recipient.id)
+
+    # Contect dictionary 
     context = {
     	'recipient':recipient,
     	'form':form,
     }
 
+    # Template
     return render(request, 'users/message_form.html', context)
 
 # ////////////// END MESSAGES CRUD//////////////////////

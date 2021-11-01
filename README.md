@@ -2069,6 +2069,12 @@ This is my exercise based on tutorials by Dennis on Udemy
         modified:   users/views.py
 
 
+#### 33.5 MESSAGES CRUD - Adding logic to createMessage view method
+
+        modified:   README.md
+        modified:   users/models.py
+        modified:   users/templates/users/message_form.html
+        modified:   users/views.py
 
 
 
