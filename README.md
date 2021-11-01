@@ -1980,8 +1980,10 @@ This is my exercise based on tutorials by Dennis on Udemy
         modified:   users/models.py
 
 
+#### 32.4 MESSAGES - Adding logic to inbox view method 
 
-
+        modified:   README.md
+        modified:   users/views.py
 
 
 

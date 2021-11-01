@@ -11,11 +11,7 @@ from django.contrib.auth.decorators import login_required
 # from django.contrib.auth.forms import UserCreationForm
 
 # Locals
-from . models import (
-	Profile, 
-	# Skill,
-	)
-
+from . models import Profile, Message
 from projects.models import Tag
 from . forms import CustomUserCreationForm, ProfileForm, SkillForm
 from .utils import searchProfiles, paginateProfiles
@@ -288,8 +284,6 @@ def deleteSkill(request, pk):
 	return render(request, 'delete_template.html', context)
 
 
-
-
 # ------------------------END CRUD SKILL----------------------
 
 
@@ -297,8 +291,20 @@ def deleteSkill(request, pk):
 
 @login_required(login_url='users:login')
 def inbox(request):
-    
-    context = {}
+
+	# Step 1: Get the logged in user
+    profile = request.user.profile
+    # Step 2: Get all messages for the receiver
+    # NOTE: Do NOT named the var 'messages'. It uses by django
+    #       messages is referring to related name in model
+    messageRequests = profile.messages.all()
+    # Step 3: Check the un-read messages
+    unreadCount = messageRequests.filter(is_read=False).count()
+
+    context = {
+    	'messageRequests': messageRequests, 
+    	'unreadCount': unreadCount
+    }
     
     return render(request, 'users/inbox.html', context)
 
