@@ -1992,7 +1992,10 @@ This is my exercise based on tutorials by Dennis on Udemy
         modified:   users/templates/users/inbox.html
 
 
+#### 32.5 MESSAGES - Adding conditional for unread and read messages
 
+        modified:   README.md
+        modified:   users/templates/users/inbox.html 
 
 
 
