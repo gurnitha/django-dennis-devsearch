@@ -2035,11 +2035,11 @@ This is my exercise based on tutorials by Dennis on Udemy
         modified:   users/templates/users/message.html
 
 
-### 33. MESSAGES CRUD
+### 33. MESSAGES CRUD (Create)
 ### -----------------------------------------------------
 
 
-#### 33.1 MESSAGES CRUD - Create message_form TVUrls
+#### 33.1 MESSAGES CRUD (Create) - Create message_form TVUrls
 
         modified:   README.md
         new file:   users/templates/users/message_form.html
@@ -2048,28 +2048,28 @@ This is my exercise based on tutorials by Dennis on Udemy
         modified:   users/views.py
 
 
-#### 33.2 MESSAGES CRUD - Create MessageForm model
+#### 33.2 MESSAGES CRUD (Create) - Create MessageForm model
 
 
         modified:   README.md
         modified:   users/forms.py
 
 
-#### 33.3 MESSAGES CRUD - Load MessageForm and add conditional to message_form
+#### 33.3 MESSAGES CRUD (Create) - Load MessageForm and add conditional to message_form
 
         modified:   README.md
         modified:   users/templates/users/message_form.html
         modified:   users/views.py
 
 
-#### 33.4 MESSAGES CRUD - Adding logic to message_form
+#### 33.4 MESSAGES CRUD (Create) - Adding logic to message_form
 
         modified:   README.md
         modified:   users/templates/users/message_form.html
         modified:   users/views.py
 
 
-#### 33.5 MESSAGES CRUD - Adding logic to createMessage view method
+#### 33.5 MESSAGES CRUD (Create) - Adding logic to createMessage view method
 
         modified:   README.md
         modified:   users/models.py
@@ -2077,7 +2077,18 @@ This is my exercise based on tutorials by Dennis on Udemy
         modified:   users/views.py
 
 
-#### 33.6 MESSAGES CRUD - Hidding Send Message button to logged in user
+#### 33.6 MESSAGES CRUD (Create) - Hidding Send Message button to logged in user
 
         modified:   README.md
         modified:   users/templates/users/user-profile.html
+
+
+#### 33.7 House keeping - Modified README.md file
+
+        modified:   README.md
+
+        NOTE:
+
+        Point 33, 33.1 to 33.6 
+        Were written: CRUD
+        It shuld be: Create
