@@ -15,7 +15,7 @@
                 {{message.subject}}</h4>
                 <a href="profile.html" class="message__author">{{message.sender|title}}</a>
                 <p class="message__date">{{message.created}}</p>
-                <div class="message__body">{{message.body}}
+                <div class="message__body">{{message.body|linebreaksbr}}
                 </div>
             </div>
         </div>

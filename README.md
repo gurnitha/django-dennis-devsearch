@@ -2029,6 +2029,10 @@ This is my exercise based on tutorials by Dennis on Udemy
         modified:   users/views.py
 
 
+#### 32.9 MESSAGES - Add linebreaksbr for subject of the message
+
+        modified:   README.md
+        modified:   users/templates/users/message.html
 
 
 
