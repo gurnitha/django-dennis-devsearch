@@ -2055,7 +2055,18 @@ This is my exercise based on tutorials by Dennis on Udemy
         modified:   users/forms.py
 
 
+#### 33.3 MESSAGES CRUD - Load MessageForm and add conditional to message_form
 
+        modified:   README.md
+        modified:   users/templates/users/message_form.html
+        modified:   users/views.py
+
+
+#### 33.4 MESSAGES CRUD - Adding logic to message_form
+
+        modified:   README.md
+        modified:   users/templates/users/message_form.html
+        modified:   users/views.py
 
 
 

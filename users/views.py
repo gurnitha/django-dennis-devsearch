@@ -13,7 +13,7 @@ from django.contrib.auth.decorators import login_required
 # Locals
 from . models import Profile, Message
 from projects.models import Tag
-from . forms import CustomUserCreationForm, ProfileForm, SkillForm
+from . forms import CustomUserCreationForm, ProfileForm, SkillForm, MessageForm
 from .utils import searchProfiles, paginateProfiles
 
 # Create your views here.
@@ -329,12 +329,17 @@ def viewMessage(request, pk):
 
 # ////////////// MESSAGES CRUD //////////////////////////
 
-@login_required(login_url='login')
 def createMessage(request, pk):
+
+	# Load MessageForm
+    form = MessageForm()
 
     recipient = Profile.objects.get(id=pk)
 
-    context = {'recipient':recipient}
+    context = {
+    	'recipient':recipient,
+    	'form':form,
+    }
 
     return render(request, 'users/message_form.html', context)
 

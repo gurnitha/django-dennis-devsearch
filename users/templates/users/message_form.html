@@ -16,13 +16,38 @@
                 <br>
 
                 <form class="form" method="POST">
-                    <!-- Input:Text -->
+                    {% csrf_token %}
+
+                    <!-- If user logged in, hide field name and email -->
+                    {% if request.user.is_authenticated == False %}
                     <div class="form__field">
-                        <label for="formInput#text">Text Field: </label>
-                        <input class="input input--text" id="formInput#text" type="text" name="text"
-                            placeholder="Enter text" />
+                        <label for="formInput#text">{{form.name.label}}</label>
+                        {{form.name}}
                     </div>
-                    <input class="btn btn--sub btn--lg  my-md" type="submit" value="Submit" />
+
+                    <div class="form__field">
+                        <label for="formInput#text">{{form.email.label}}</label>
+                        {{form.email}}
+                    </div>
+                    {% endif %}
+                    <!-- END If user logged in, hide field name and email -->
+
+                    <div class="form__field">
+                        <label for="formInput#text">{{form.subject.label}}</label>
+                        {{form.subject}}
+                    </div>
+
+                    <div class="form__field">
+                        <label for="formInput#text">{{form.body.label}}</label>
+                        {{form.body}}
+                    </div>
+
+	                <input 
+	                	class="btn btn--sub btn--lg my-md" 
+	                	type="submit" 
+	                	name=""
+	                	value="Submit">
+	                <!-- END If user not log in -->
                 </form>
 
             </div>
