@@ -2048,9 +2048,11 @@ This is my exercise based on tutorials by Dennis on Udemy
         modified:   users/views.py
 
 
+#### 33.2 MESSAGES CRUD - Create MessageForm model
 
 
-
+        modified:   README.md
+        modified:   users/forms.py
 
 
 
