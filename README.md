@@ -1973,6 +1973,12 @@ This is my exercise based on tutorials by Dennis on Udemy
         modified:   users/views.py
 
 
+#### 32.3 MESSAGES - Modified the Message model and INSERT some messages for testing
+
+        modified:   README.md
+        new file:   users/migrations/0007_auto_20211101_0751.py
+        modified:   users/models.py
+
 
 
 
