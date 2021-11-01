@@ -1951,8 +1951,17 @@ This is my exercise based on tutorials by Dennis on Udemy
         modified:   users/views.py
 
 
+### 32. MESSAGES
+### -----------------------------------------------------
 
 
+#### 32.1 MESSAGES - Create Messages model, migrations and register to admin
+
+        modified:   README.md
+        new file:   projects/migrations/0007_auto_20211101_0711.py
+        modified:   users/admin.py
+        new file:   users/migrations/0006_message.py
+        modified:   users/models.py
 
 
 
