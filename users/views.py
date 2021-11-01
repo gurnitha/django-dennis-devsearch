@@ -310,7 +310,7 @@ def inbox(request):
 
 
 @login_required(login_url='login')
-def viewMessage(request):
+def viewMessage(request, pk):
 
     context = {}
 

@@ -2007,6 +2007,13 @@ This is my exercise based on tutorials by Dennis on Udemy
         modified:   users/views.py
 
 
+#### 32.7 MESSAGES - Adding request id to url and viewMessage
+
+        modified:   README.md
+        modified:   users/templates/users/message_inbox.html
+        modified:   users/urls.py
+        modified:   users/views.py
+
 
 
 

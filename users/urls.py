@@ -31,6 +31,6 @@ urlpatterns = [
 
     # Messages
     path('inbox/', views.inbox, name='inbox'),
-    path('message/1/', views.viewMessage, name='message'),
+    path('message/<str:pk>/', views.viewMessage, name='message'),
 
 ]
