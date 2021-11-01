@@ -309,7 +309,7 @@ def inbox(request):
     return render(request, 'users/message_inbox.html', context)
 
 
-@login_required(login_url='login')
+@login_required(login_url='users:login')
 def viewMessage(request, pk):
 
 	# Step 1: Get the message from the sender
@@ -325,5 +325,19 @@ def viewMessage(request, pk):
     context = {'message': message}
 
     return render(request, 'users/message.html', context)
+
+
+# ////////////// MESSAGES CRUD //////////////////////////
+
+@login_required(login_url='login')
+def createMessage(request, pk):
+
+    recipient = Profile.objects.get(id=pk)
+
+    context = {'recipient':recipient}
+
+    return render(request, 'users/message_form.html', context)
+
+# ////////////// END MESSAGES CRUD//////////////////////
 
 # ------------------------END MESSAGES------------------------

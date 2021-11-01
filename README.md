@@ -2035,8 +2035,17 @@ This is my exercise based on tutorials by Dennis on Udemy
         modified:   users/templates/users/message.html
 
 
+### 33. MESSAGES CRUD
+### -----------------------------------------------------
 
 
+#### 33.1 MESSAGES CRUD - Create message_form TVUrls
+
+        modified:   README.md
+        new file:   users/templates/users/message_form.html
+        modified:   users/templates/users/user-profile.html
+        modified:   users/urls.py
+        modified:   users/views.py
 
 
 
