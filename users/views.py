@@ -291,3 +291,15 @@ def deleteSkill(request, pk):
 
 
 # ------------------------END CRUD SKILL----------------------
+
+
+# ------------------------MESSAGES----------------------------
+
+@login_required(login_url='users:login')
+def inbox(request):
+    
+    context = {}
+    
+    return render(request, 'users/inbox.html', context)
+
+# ------------------------END MESSAGES------------------------

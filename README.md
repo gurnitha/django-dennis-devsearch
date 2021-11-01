@@ -1964,6 +1964,14 @@ This is my exercise based on tutorials by Dennis on Udemy
         modified:   users/models.py
 
 
+#### 32.2 MESSAGES - Add inbox template TVUrls
+
+        modified:   README.md
+        modified:   templates/main.html
+        new file:   users/templates/users/inbox.html
+        modified:   users/urls.py
+        modified:   users/views.py
+
 
 
 
