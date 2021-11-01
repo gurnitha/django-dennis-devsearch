@@ -312,7 +312,17 @@ def inbox(request):
 @login_required(login_url='login')
 def viewMessage(request, pk):
 
-    context = {}
+	# Step 1: Get the message from the sender
+    profile = request.user.profile
+    # Step 2: Get specific un_read message sent by the sernder
+    #         then save it after reading
+    #         NOTE: message refer to related_name in the Message model
+    message = profile.messages.get(id=pk)
+    if message.is_read == False:
+        message.is_read = True
+        message.save()
+
+    context = {'message': message}
 
     return render(request, 'users/message.html', context)
 

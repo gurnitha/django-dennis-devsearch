@@ -2015,9 +2015,18 @@ This is my exercise based on tutorials by Dennis on Udemy
         modified:   users/views.py
 
 
+#### 32.8 MESSAGES - Adding logic to viewMessage
+
+        modified:   README.md
+        modified:   users/views.py
 
 
+#### 32.8 MESSAGES - Fetching the messages
 
+        modified:   README.md
+        modified:   users/templates/users/message.html
+        modified:   users/templates/users/message_inbox.html
+        modified:   users/views.py
 
 
 

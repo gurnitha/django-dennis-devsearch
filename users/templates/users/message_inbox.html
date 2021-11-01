@@ -35,8 +35,8 @@
                     <li class="message">
                     {% endif %}
                         <a href="{% url 'users:message' message.id %}">
-                        <span class="message__author">{{message.name}}</span>
-                        <span class="message__subject">{{message.subject}}</span>
+                        <span class="message__author">{{message.name|slice:"200"|title}}</span>
+                        <span class="message__subject">{{message.subject|slice:"200"}}</span>
                         <span class="message__date">{{message.created}}</span>
                         </a>
                     </li>
