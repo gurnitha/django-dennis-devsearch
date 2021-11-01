@@ -1998,6 +1998,15 @@ This is my exercise based on tutorials by Dennis on Udemy
         modified:   users/templates/users/inbox.html 
 
 
+#### 32.6 MESSAGES - Create message template TVUrls and modified inbox template name
+
+        modified:   README.md
+        new file:   users/templates/users/message.html
+        renamed:    users/templates/users/inbox.html -> users/templates/users/message_inbox.html
+        modified:   users/urls.py
+        modified:   users/views.py
+
+
 
 
 

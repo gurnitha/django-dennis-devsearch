@@ -306,6 +306,14 @@ def inbox(request):
     	'unreadCount': unreadCount
     }
     
-    return render(request, 'users/inbox.html', context)
+    return render(request, 'users/message_inbox.html', context)
+
+
+@login_required(login_url='login')
+def viewMessage(request):
+
+    context = {}
+
+    return render(request, 'users/message.html', context)
 
 # ------------------------END MESSAGES------------------------
